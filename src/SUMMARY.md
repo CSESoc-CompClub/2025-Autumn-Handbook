@@ -10,4 +10,4 @@
         - [Task 1.1: Create Game Screen](new_game/Create_Screen.md)
         - [Task 1.2: Create Game Loop](new_game/Game_Loop.md)
         - [Task 1.3: Add Background Image](new_game/Background.md)
-        - [Task 1.4: Add App Icon and Game Title](new_game/App_Title_Icon.md)
+        - [Task 1.4: Add Icon and Game Title](new_game/Title_Icon.md)

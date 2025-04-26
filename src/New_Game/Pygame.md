@@ -43,18 +43,6 @@ pygame.init()
 You should now see something like this:
 
 ![Pygame Init](../images/import_pygame/2.png)
-
----
-# Chckpoint
-If you have finished all of these, you can go to Task 1
-
-| Step | Purpose |
-|:-----|:--------|
-| `import pygame` | Bring in the Pygame library |
-| `pygame.init()` | Start all the Pygame systems so you can use them |
-
-Without these two steps, your game won't be able to run!
-
 ---
 
 # Great Job!
