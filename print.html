@@ -177,42 +177,48 @@
                         <h1 id="task-1-set-up"><a class="header" href="#task-1-set-up">Task 1: Set Up</a></h1>
 <p><strong>Goal:</strong> Create a file and initialise pygame.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-11-make-python-file"><a class="header" href="#task-11-make-python-file">Task 1.1: Make Python File</a></h1>
-<p>Now that you have VS Code open, it’s time to create your Python file!</p>
-<p>In VS Code, click on <strong>File</strong></p>
-<pre><code>![File](../images/create_files/1.png)
-</code></pre>
-<p>and then New File...
-<img src="1_set_up/../images/create_files/2.png" alt="New File" /></p>
-<p>You should see something like this pop up after you cilck 'New File'
+<ol>
+<li>
+<p>In VS Code, click on <strong>File</strong> and then <strong>New File...</strong></p>
+<p><img src="1_set_up/../images/create_files/1.png" alt="File" /></p>
+<p><img src="1_set_up/../images/create_files/2.png" alt="New File" /></p>
+<p>You should see something like this pop up <strong>after you cilck 'New File'</strong>
 <img src="1_set_up/../images/create_files/3.png" alt="Pop Up" /></p>
+</li>
+<li>
 <p>Enter the name of your file (e.g. 'my_game.py')
-<img src="1_set_up/../images/create_files/5.png" alt="my_game.py" />
-<span style="font-size: 24px;"><code>NOTE:   It’s super important to include **`.py`** at the end of the file name so VS Code knows it's Python code!</code></span></p>
+<img src="1_set_up/../images/create_files/5.png" alt="my_game.py" /></p>
+<p><span style="font-size: 24px;">```
+NOTE:<br />
+It’s super important to include <strong><code>.py</code></strong> at the end of the file name so VS Code knows it's Python code!</p>
+<pre><code class="language-&lt;/span&gt;">
+
+</code></pre>
+</li>
+<li>
 <p>Press <strong>'ENTER'</strong> and something looks like this should pop up
 <img src="1_set_up/../images/create_files/8.png" alt="my_game.py" /></p>
+</li>
+<li>
 <p>Press <strong>'Desktop'</strong> and then <strong>'Create File'</strong> to save your file to the Desktop
 <img src="1_set_up/../images/create_files/6.png" alt="my_game.py" /></p>
+</li>
+</ol>
 <p><img src="1_set_up/../images/create_files/7.png" alt="my_game.py" /></p>
-<p><strong>AND NOW YOU HAVE CREATED YOUR PYTHON FILE!!! YOU CAN START CODING</strong>
-<img src="1_set_up/../images/create_files/9.png" alt="my_game.py" /></p>
+<ol start="5">
+<li><strong>AND NOW YOU HAVE CREATED YOUR PYTHON FILE!!! YOU CAN START CODING</strong>
+<img src="1_set_up/../images/create_files/9.png" alt="my_game.py" /></li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-12-import-pygame"><a class="header" href="#task-12-import-pygame">Task 1.2: Import Pygame</a></h1>
 <p>Now that you have created your Python file, it's time to start setting it up for Pygame!</p>
-<h2 id="step-1-import-the-pygame-module"><a class="header" href="#step-1-import-the-pygame-module">Step 1: Import the Pygame Module</a></h2>
+<ol>
+<li>
 <p>At the very top of your Python file, you need to <strong>import</strong> the Pygame library.</p>
-<p>Type this line at the very top of your file:</p>
-<pre><code class="language-python">import pygame
-</code></pre>
-<p>This command loads the Pygame tools into your file, so you can use them for your game!</p>
-<p>You should now see something like this:</p>
-<img src="1_set_up/../images/import_pygame/1.png" width="2000">
-<hr />
-<h2 id="step-2-initialise-pygame"><a class="header" href="#step-2-initialise-pygame">Step 2: Initialise Pygame</a></h2>
-<p>Before we can use any Pygame features (like drawing things and moving characters), we need to <strong>initialise</strong> it.</p>
-<p><strong>Initialising</strong> Pygame gets everything ready behind the scenes.</p>
-<p>Right underneath your <code>import pygame</code> line, type:</p>
-<pre><code class="language-python">pygame.init()
-</code></pre>
-<p><code>pygame.init()</code> starts up all the Pygame systems like sound, graphics, timing, etc.</p>
+</li>
+<li>
+<p><strong>Initialising</strong> Pygame</p>
+</li>
+</ol>
 <p>You should now see something like this:</p>
 <p><img src="1_set_up/../images/import_pygame/2.png" alt="Pygame Init" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-2-creating-a-game-screen"><a class="header" href="#task-2-creating-a-game-screen">Task 2: Creating a game screen</a></h1>
@@ -304,7 +310,7 @@ A background showing up instead of a black screen!</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-3-making-a-player"><a class="header" href="#task-3-making-a-player">Task 3: Making a player</a></h1>
 <p><strong>Goal:</strong> Make a player that can move and be seen on the screen.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-21-create-a-player-class"><a class="header" href="#task-21-create-a-player-class">Task 2.1 Create a player class</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="task-31-create-a-player-class"><a class="header" href="#task-31-create-a-player-class">Task 3.1 Create a player class</a></h1>
 <p>Your task is to create a player class with the following properties</p>
 <ul>
 <li>name</li>
@@ -357,8 +363,17 @@ bird.</li>
 <p>That fixed it!</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-4-adding-other-entities"><a class="header" href="#task-4-adding-other-entities">Task 4: Adding other entities</a></h1>
 <p><strong>Goal:</strong> Add multiple entities that are related to each other. In this example we have added food, but you are free to add what you wish, as long as it is appropriate. </p>
-<div style="break-before: page; page-break-before: always;"></div><ol start="2">
-<li>Inside your <code>Food</code> class, create a special function called <code>__init__</code>.</li>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="task-31-create-a-food-class"><a class="header" href="#task-31-create-a-food-class">Task 3.1: Create a Food Class</a></h1>
+<ol>
+<li>
+<p>Start by creating a new class called <code>Food</code>.</p>
+<h3 id="example"><a class="header" href="#example">Example:</a></h3>
+<pre><code class="language-python">    class Food:
+</code></pre>
+</li>
+<li>
+<p>Inside your <code>Food</code> class, create a special function called <code>__init__</code>.</p>
+</li>
 </ol>
 <h3 id="hints"><a class="header" href="#hints">Hints:</a></h3>
 <ul>
@@ -374,18 +389,10 @@ bird.</li>
 <li>Save each of these inputs into the object using <code>self.</code></li>
 </ul>
 <ol start="3">
-<li>
-<p>Inside your <code>__init__()</code> method, set a default <strong>size</strong> for your food.</p>
-</li>
-<li>
-<p>Still inside the <code>__init__()</code> method, load the image file using Pygame's <code>image load</code> function.</p>
-</li>
-<li>
-<p>Scale the loaded image to the correct size using Pygame's <code>transform scale</code> function.</p>
-</li>
-<li>
-<p>Save the final scaled image into the object (e.g., <code>self.sprite</code>).</p>
-</li>
+<li>Inside your <code>__init__()</code> method, set a default <strong>size</strong> for your food.</li>
+<li>Still inside the <code>__init__()</code> method, load the image file using Pygame's <code>image load</code> function.</li>
+<li>Scale the loaded image to the correct size using Pygame's <code>transform scale</code> function.</li>
+<li>Save the final scaled image into the object (e.g., <code>self.sprite</code>).</li>
 </ol>
 <hr />
 <h1 id="checkpoints-3"><a class="header" href="#checkpoints-3">Checkpoints</a></h1>
