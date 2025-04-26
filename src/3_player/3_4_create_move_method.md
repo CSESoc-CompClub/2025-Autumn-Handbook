@@ -14,12 +14,13 @@
 2. Use `pygame.key.get_pressed()` to check which keys are currently being held down and save the result into a variable
 
 3. Check if the player is pressing:
-    | Key | Action |
-    |:----|:-------|
-    | `W` key | Move **up** |
-    | `A` key | Move **left** |
-    | `S` key | Move **down** |
-    | `D` key | Move **right** |
+
+| Key | Action |
+|:----|:-------|
+| `W` key | Move **up** |
+| `A` key | Move **left** |
+| `S` key | Move **down** |
+| `D` key | Move **right** |
 
 <br>
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
