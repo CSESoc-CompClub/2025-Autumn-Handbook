@@ -1,6 +1,10 @@
 [book]
-authors = ["Margaritalala"]
+title = "2025 Autumn Handbook"
+author = "CSESoc CompClub"
 language = "en"
-multilingual = false
-src = "src"
-title = "2025_Autumn_Workshop"
+
+[build]
+build-dir = "book"
+
+[output.html]
+default-theme = "light"
