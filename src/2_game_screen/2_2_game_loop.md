@@ -1,14 +1,19 @@
 # Task 2.2: Create Game Loop
-1. Use a variable called **`running`** and set it to **True** at the start
-2. Make a **while** loop which will **keep looping while the game is running**.
-3. Inside your `while running:` loop, you need to **check what the player is doing**.
-    ### Hint:
-    - Use `for event in pygame.event.get():`
-    - Go through all the events (like mouse clicks, window close, etc.)
-    - If the player close the game (event.type == pygame.QUIT`), you need to **stop the loop**!
-4. At the end of your while loop,  refresh the screen with `pygame.display.update()`
+1. Use a variable called `running` and set it to `True` at the start
+2. Make a `while` loop which will keep looping while the game is running.
+3. Inside your `while running:` loop, loop through each event type and check quit the game if the event type is quit. 
+4. Inside your `while running:` loop, update the display
 
-<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b><p>
+    <ul>  
+        <li>Make a for loop: <code>for event in pygame.event.get()</code></li>
+        <li>If the player closes the game <code>event.type == pygame.QUIT</code>, you need to set a certain variable to False</li>
+    </ul>
+</div>
+
+5. At the end of your while loop,  refresh the screen with `pygame.display.update()`
+
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
     <ul>  
