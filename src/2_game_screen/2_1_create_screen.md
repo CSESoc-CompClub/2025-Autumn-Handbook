@@ -1,4 +1,4 @@
-# Task 1.1: Create Game Screen
+# Task 2.1: Create Game Screen
 
 Before we make our game we need to set up the screen to display it!
 
