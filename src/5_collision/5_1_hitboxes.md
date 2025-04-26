@@ -4,10 +4,12 @@
 2. Create a **method** called ``update(self)`` in the player class. Copy the property you just wrote into this method.
 3. Call the player update method in the main game loop, just underneath ``player.draw()``
 
-### Hint
-```python
-# sprite.get_rect() creates a rectangle the size of the image
-# .move() moves whatever it's attached to to an x and y coordinate
-self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)
-```
-
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b><p>
+    <ul style="width: 100%;">  
+        <li><code>sprite.get_rect()</code> creates a rectangle the size of the image</li>
+        <li><code>.move()</code> moves whatever it's attached to to an x and y coordinate</li>
+        <li>To combine these into a hitbox you can have:
+        <pre style="display: inline; font-size:80%;">self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)</code></li>
+    </ul>
+</div>

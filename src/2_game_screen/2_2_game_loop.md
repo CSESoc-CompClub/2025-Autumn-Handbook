@@ -7,8 +7,8 @@
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>💡 Hint</b><p>
     <ul>  
-        <li>Make a for loop: <pre style="display: inline;">for event in pygame.event.get()</pre></li>
-        <li>If the player closes the game <pre style="display: inline;">event.type == pygame.QUIT</pre>, you need to set a certain variable to False</li>
+        <li>Make a for loop: <code>for event in pygame.event.get()</code></li>
+        <li>If the player closes the game <code>event.type == pygame.QUIT</code>, you need to set a certain variable to False</li>
     </ul>
 </div>
 
