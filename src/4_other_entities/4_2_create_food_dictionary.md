@@ -1,4 +1,4 @@
-# Task 3.2: Create a Food Dictionary
+# Task 4.2: Create a Food Dictionary
 1. Create a dictionary called `foods`, this dictionary will hold all the food items you want to appear in your game.
     ### Hint:
     - Use curly braces `{}` to create a dictionary.
