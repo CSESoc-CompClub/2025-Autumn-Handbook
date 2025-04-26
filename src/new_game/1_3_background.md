@@ -4,31 +4,12 @@ Now it’s time to make your game look cooler by adding a background!
 
 Instead of just showing a black screen, let’s add an image behind everything.
 
-## Step 1: Get all the images!
+## Step 1: Load the Background Image
 
-We need to load all the images that we need for our game!
-
-1. Download the images onto our computer. Go to
-https://www.girlsprogramming.network/flappy-bird-images and download all the images there.
-
-2. Double click on the zip folder to unzip the the folder to get to the images
-
-3. Move the images folder into the “flappy_bird” folder
----
-
-## Step 2: Load the Background Image
-
-Now you need to **load** the background image into your game.
-
-```Hint:
-- Use `pygame.image.load(...)`
-- Save the result into a variable called something like `background`
-```
-
+First you need to **load** the background image into your game.
 You can first save the image path as a **variable**:
 
-```
-Hint:
+```Hint:
 - Something like `background_image = "images/background/wooden_floor.jpeg"`
 
 - Then load it using `pygame.image.load(background_image)`

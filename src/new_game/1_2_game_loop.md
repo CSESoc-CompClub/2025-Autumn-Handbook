@@ -12,13 +12,11 @@ To keep your game running, you need a **loop** that keeps checking:
 
 ## Step 1: Create a \"Running\" Variable
 
-First, you need a variable that tells Python:
-- Should the game keep running?
-- Or should it stop?
+First, you need a variable that ley Python check: Should the game keep running?
 
 ```
 Hint:  
-Use a variable called **`running`** and set it to **True** at the start!
+Use a variable called **`running`** and set it to **True** at the start
 ```
 ---
 
@@ -40,7 +38,7 @@ you need to **check what the player is doing**.
 ```Hint:
 - Use `for event in pygame.event.get():`
 - Go through all the events (like mouse clicks, window close, etc.)
-- If the player clicks the X to close the game (event.type == pygame.QUIT`), you need to **stop the loop**!
+- If the player close the game (event.type == pygame.QUIT`), you need to **stop the loop**!
 ```
 ---
 
@@ -52,9 +50,6 @@ At the end of your while loop,  refresh the screen:
 Hint:
 - Use `pygame.display.update()`
 ```
-
-This makes sure anything you draw later will appear!
-
 ---
 
 # Checkpoints

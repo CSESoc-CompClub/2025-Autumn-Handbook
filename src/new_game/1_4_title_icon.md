@@ -10,15 +10,13 @@ You can change the text that appears at the very top of your game window.
 ```Hint:
 - Use a Pygame function `ame.display.set_caption()`.
 - Inside the brackets `(...)`, put the title you want in **quotation marks**
+- Example title: `game.display.set_caption("My game")`
 ```
-
-Example title: `game.display.set_caption("My game")`
-
 ---
 
 ## Step 2: Set a Custom Icon for Your Game
 
-You can also add a small **picture** as the icon of your game
+You can also add a **picture** as the icon of your game
 
 ```Hint:
 - First, you need to **load an image** using `pygame.image.load(...)`

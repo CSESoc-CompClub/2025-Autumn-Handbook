@@ -2,8 +2,6 @@
 
 Now that you have VS Code open, it’s time to create your Python file!
 
-<span style="font-size: 24px;">**Follow these steps:**</span>
-
 In VS Code, click on **File**
 
     ![File](../images/create_files/1.png)

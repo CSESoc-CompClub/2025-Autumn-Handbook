@@ -1,14 +1,9 @@
 # Task 0.3: Import Pygame
 Now that you have created your Python file, it's time to start setting it up for Pygame!
 
-<span style="font-size: 24px;">**Follow these steps:**</span>
-
 ## Step 1: Import the Pygame Module
 
 At the very top of your Python file, you need to **import** the Pygame library.
-
-This tells Python:  
-*"Hey, I’m going to use Pygame in this project!"*
 
 Type this line at the very top of your file:
 
@@ -27,8 +22,7 @@ You should now see something like this:
 
 ## Step 2: Initialise Pygame
 
-Before we can use any Pygame features (like drawing things and moving characters),  
-we need to **initialise** it.
+Before we can use any Pygame features (like drawing things and moving characters), we need to **initialise** it.
 
 **Initialising** Pygame gets everything ready behind the scenes.
 
@@ -43,12 +37,3 @@ pygame.init()
 You should now see something like this:
 
 ![Pygame Init](../images/import_pygame/2.png)
----
-
-# Great Job!
-
-You are now ready to start building your game screen!
-
-In the next task, we will set up your game window!
-
-<span style="font-size: 24px;">**LET'S GOOOOO!**</span>
