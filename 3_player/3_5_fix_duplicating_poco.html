@@ -174,13 +174,18 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="task-35-fix-duplicating-poco"><a class="header" href="#task-35-fix-duplicating-poco">Task 3.5: Fix duplicating Poco</a></h1>
-<p>We’re going to fix the trailing images issue by re-drawing the background to the screen
-every time the game loops.</p>
+<ol>
+<li>Inside your <code>while running:</code> game loop, <strong>at the very start</strong> of the loop (before drawing the player or foods), draw the background again over the whole screen.</li>
+</ol>
+<h3 id="hint"><a class="header" href="#hint">Hint:</a></h3>
 <ul>
-<li>Draw the background to the screen again inside the game loop before drawing the
-bird.</li>
+<li>Use <code>screen.blit(, )</code></li>
 </ul>
-<p>That fixed it!</p>
+<h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+Now Poco will move smoothly without leaving any clones behind</li>
+</ul>
 
                     </main>
 

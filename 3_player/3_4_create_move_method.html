@@ -174,29 +174,58 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="task-34-create-the-move-method"><a class="header" href="#task-34-create-the-move-method">Task 3.4: Create the move method</a></h1>
-<p>Your task is to create the move method. </p>
-<hr />
-<h2 id="task-241"><a class="header" href="#task-241">Task 2.4.1</a></h2>
-<p>First, you need to find whether a certain key is being pressed or not. Similar to yesterday, we can use a function called <a href="https://www.pygame.org/docs/ref/key.html#pygame.key.get_pressed"><code>pygame.key.get_pressed()</code></a>. </p>
-<pre><code>Hint: This returns a list of booleans.
-For example, the return value may look something like this 
-    -&gt; [False, False, False, False, True, False, False]
+<ol>
+<li>
+<p>Inside your <code>Player</code> class, define a new method called <code>move()</code>.</p>
+<h3 id="hints"><a class="header" href="#hints">Hints:</a></h3>
+<pre><code> - Use the `def` keyword.
+ - Remember to give it just one parameter: `self`.
 </code></pre>
-<p>How might we check whether the 7th key is pressed?</p>
-<h2 id="task-242"><a class="header" href="#task-242">Task 2.4.2</a></h2>
-<p>Secondly, we need to update the <code>position_x</code> and <code>position_y</code> variables of our player according to what key was pressed. </p>
-<p>For example, something like</p>
-<pre><code>if w is pressed
-    move up
-else if a is pressed
-    move left
-else if s is pressed
-    move down
-else 
-    move right
+</li>
+<li>
+<p>Use <code>pygame.key.get_pressed()</code> to check which keys are currently being held down and save the result into a variable</p>
+</li>
+<li>
+<p>Check if the player is pressing:
+| Key | Action |
+|:----|:-------|
+| <code>W</code> key | Move <strong>up</strong> |
+| <code>A</code> key | Move <strong>left</strong> |
+| <code>S</code> key | Move <strong>down</strong> |
+| <code>D</code> key | Move <strong>right</strong> |</p>
+<h3 id="hints-1"><a class="header" href="#hints-1">Hints:</a></h3>
+<ul>
+<li>If the <code>W</code> key is pressed, <strong>decrease</strong> the y position.</li>
+<li>If the <code>S</code> key is pressed, <strong>increase</strong> the y position.</li>
+<li>If the <code>A</code> key is pressed, <strong>decrease</strong> the x position.</li>
+<li>If the <code>D</code> key is pressed, <strong>increase</strong> the x position.</li>
+</ul>
+</li>
+<li>
+<p>change the player's image depending on the direction they are moving</p>
+<h3 id="hints-2"><a class="header" href="#hints-2">Hints:</a></h3>
+<pre><code> - When moving **up**, change the image to &quot;poco_up.png&quot;
+ - When moving **down**, change the image to &quot;poco_down.png&quot;
+ - When moving **left**, change the image to &quot;poco_left.png&quot;
+ - When moving **right**, change the image to &quot;poco_right.png&quot;
 </code></pre>
-<h2 id="task-243"><a class="header" href="#task-243">Task 2.4.3</a></h2>
-<p>Add <code>player.move()</code> and <code>player.draw()</code> to the game loop.</p>
+</li>
+</ol>
+<h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<p>A <code>move()</code> method inside your Player class</p>
+</li>
+<li><input disabled="" type="checkbox"/>
+<p>The method checks which keys are pressed</p>
+</li>
+<li>
+<p>[ ]The method updates the player’s <code>position_x</code> and <code>position_y</code></p>
+</li>
+<li><input disabled="" type="checkbox"/>
+<p>The player image changes when moving!</p>
+</li>
+</ul>
 
                     </main>
 

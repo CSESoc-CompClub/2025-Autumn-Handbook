@@ -173,14 +173,58 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="task-31-create-a-player-class"><a class="header" href="#task-31-create-a-player-class">Task 3.1 Create a player class</a></h1>
-<p>Your task is to create a player class with the following properties</p>
+                        <h1 id="task-31-create-a-player-class"><a class="header" href="#task-31-create-a-player-class">Task 3.1: Create a Player Class</a></h1>
+<ol>
+<li>
+<p>We'll create a <code>Player</code> class to store: The player’s position, size and image (sprite)</p>
+<h3 id="hint"><a class="header" href="#hint">Hint:</a></h3>
+<pre><code> - Use the `class` keyword.
+ - The class name should start with a **capital letter**.
+</code></pre>
+</li>
+<li>
+<p>Inside your <code>Player</code> class, create an <code>__init__()</code> method.</p>
+<h3 id="hints"><a class="header" href="#hints">Hints:</a></h3>
+<pre><code> - Use the `def` keyword to define the method.
+ - The `__init__()` method should only have `self` as its input.
+</code></pre>
+</li>
+<li>
+<p>Inside your <code>__init__()</code> method, create the following properties:</p>
 <ul>
-<li>name</li>
-<li>image</li>
-<li>sprite</li>
-<li>position_x</li>
-<li>position_y</li>
+<li><code>position_x</code> -&gt; set it to 0 for now</li>
+<li><code>position_y</code> -&gt;set it to 0 for now</li>
+<li><code>size</code> -&gt; (width, height) </li>
+<li><code>image</code> -&gt; file name </li>
+</ul>
+</li>
+<li>
+<p>Load and Scale the Player’s Sprite inside your <code>__init__()</code> method:</p>
+<h3 id="hints-1"><a class="header" href="#hints-1">Hints:</a></h3>
+<pre><code> - Use `pygame.image.load(...)` to load the player image file.
+ - Use `pygame.transform.scale(...)` to resize the player’s image to the correct size.
+</code></pre>
+</li>
+</ol>
+<hr />
+<h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+<p>A <code>Player</code> class</p>
+</li>
+<li><input disabled="" type="checkbox"/>
+<p>An <code>__init__()</code> method inside the class</p>
+</li>
+<li><input disabled="" type="checkbox"/>
+<p>Player properties:</p>
+<ul>
+<li><code>position_x</code></li>
+<li><code>position_y</code></li>
+<li><code>size</code></li>
+<li><code>image</code></li>
+<li><code>sprite</code></li>
+</ul>
+</li>
 </ul>
 
                     </main>
