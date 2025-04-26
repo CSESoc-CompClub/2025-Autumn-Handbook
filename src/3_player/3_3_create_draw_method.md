@@ -1,12 +1,21 @@
 # Task 3.3: Create the draw method
 
-Under the player method, we need to create a draw method().
-How might we create a method inside a class? If you are stuck have a read [here](https://www.w3schools.com/python/python_classes.asp).
+1.  Create a new method called `draw`.
 
-Perhaps the [`screen.blit(...)`](https://www.geeksforgeeks.org/pygame-surface-blit-function/) function could be useful...
+    ### Hint:
+    - Use the `def` keyword.
+    - It should be written **inside** your Food class (at the same indentation level as `__init__()`).
+    - This method **won’t take any arguments** (only `self`).
+    - This method will **draw the food** onto the screen.
+2. Draw the Sprite Onto the Screen
+    ### Hint
+    - Use `screen.blit(...)` to draw.
+    - The first thing you want to draw is the **sprite**.
+    - The position to draw at is `(position_x, position_y)`.
 
-Now, in order for the player position to be updated very often, where would we call this draw method?
-
-
+# Checkpoints
+- [ ] A `draw()` method inside your Food class which knows how to:
+    - Draw the sprite
+    - And place it at the correct position
 
 
