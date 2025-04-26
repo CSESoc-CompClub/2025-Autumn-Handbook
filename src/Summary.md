@@ -1,10 +1,7 @@
 # Summary
 
-- NEW GAME
-    - TASK 0: SET UP
-        - [Task 0.1: Set Up VS Code](VS_Code.md)
-        - [Task 0.2: Make Python File](New_File.md)
-        - [Task 0.3: import Pygame](Pygame.md)
-
-    - TASK 1: INITIALISING
-        - [Task 1.1: ]
+- [NEW GAME](NEW_GAME/NEW_GAME.md)
+    - [TASK 0: SET UP](NEW_GAME/setup.md)
+        - [Task 0.1: Set Up VS Code](NEW_GAME/VS_Code.md)
+        - [Task 0.2: Make Python File](NEW_GAME/New_File.md)
+        - [Task 0.3: Import Pygame](NEW_GAME/Pygame.md)
