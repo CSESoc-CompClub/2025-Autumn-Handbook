@@ -4,6 +4,7 @@
 2. `blit` the text onto the screen. Experiment with where you would put the score!
 
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+<p style="text-align: center;"><b>💡 Hint</b><p>
 <pre>
 <code># Setting fonts in pygame
     colour = (256, 256, 256) # (R,G,B)
