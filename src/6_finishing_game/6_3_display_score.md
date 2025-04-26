@@ -1,16 +1,19 @@
 # Task 6.3: Show the score on the screen
 
-## Step 1.
+1. Render the score on the screen. We can use `font.render()`.
+2. `blit` the text onto the screen. Experiment with where you would put the score!
 
-We need to render the score on the screen. Perhaps, we could do something like [`font.render()`](https://www.pygame.org/docs/ref/font.html#pygame.font.Font.render) might help us...
+### Hints
+```python
+# Setting fonts in pygame
+colour = (256, 256, 256) # (R,G,B)
 
+# Creating text - concatenate "Score: " and the score variable
+# https://www.pygame.org/docs/ref/font.html#pygame.font.Font.render
+font.render("Score: " + score, True, colour)
 
-## Step 2.
-We now need to `blit` the text onto the screen. You can think of it as the previous step drew us the image, and now we need to 'put' it on the screen. Where might we put this function?
-
-Use: 
-```
-screen.blit(Surface, Coordinate)
+# Drawing on the screen
+screen.blit(image, (x_position, y_position))
 ```
 
 
