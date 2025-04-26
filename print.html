@@ -314,20 +314,28 @@ A background showing up instead of a black screen!</li>
 <p><strong>Goal:</strong> Make a player that can move and be seen on the screen.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-31-create-a-player-class"><a class="header" href="#task-31-create-a-player-class">Task 3.1: Create a Player Class</a></h1>
 <ol>
-<li>
-<p>We'll create a <code>Player</code> class to store: The player’s position, size and image (sprite)</p>
-<h3 id="hint-1"><a class="header" href="#hint-1">Hint:</a></h3>
-<pre><code> - Use the `class` keyword.
- - The class name should start with a **capital letter**.
-</code></pre>
-</li>
-<li>
-<p>Inside your <code>Player</code> class, create an <code>__init__()</code> method.</p>
-<h3 id="hints"><a class="header" href="#hints">Hints:</a></h3>
-<pre><code> - Use the `def` keyword to define the method.
- - The `__init__()` method should only have `self` as its input.
-</code></pre>
-</li>
+<li>We'll create a <code>Player</code> class to store: The player’s position, size and image (sprite)
+<br></li>
+</ol>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b><p>
+    <ul>  
+        <li>Use the <code>class</code> keyword</li>
+        <li>The class name should start with a <strong>capital letter</strong>.</li>
+    </ul>
+</div>
+<ol start="2">
+<li>Inside your <code>Player</code> class, create an <code>__init__()</code> method.
+<br></li>
+</ol>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b><p>
+    <ul>  
+        <li>Use the <code>def</code> keyword to define the method.</li>
+        <li>The <code>__init__()</code> method should only have <code>self</code> as its input.</li>
+    </ul>
+</div>
+<ol start="3">
 <li>
 <p>Inside your <code>__init__()</code> method, create the following properties:</p>
 <ul>
@@ -338,101 +346,115 @@ A background showing up instead of a black screen!</li>
 </ul>
 </li>
 <li>
-<p>Load and Scale the Player’s Sprite inside your <code>__init__()</code> method:</p>
-<h3 id="hints-1"><a class="header" href="#hints-1">Hints:</a></h3>
-<pre><code> - Use `pygame.image.load(...)` to load the player image file.
- - Use `pygame.transform.scale(...)` to resize the player’s image to the correct size.
-</code></pre>
+<p>Load and Scale the Player’s Sprite inside your <code>__init__()</code> method:
+<br></p>
 </li>
 </ol>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b><p>
+    <ul>  
+        <li>Use <code>pygame.image.load(...)</code> to load the player image file.</li>
+        <li>Use <code>pygame.transform.scale(...)</code> to resize the player’s image to the correct size.</li>
+    </ul>
+</div>
 <hr />
 <h1 id="checkpoints-2"><a class="header" href="#checkpoints-2">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<p>A <code>Player</code> class</p>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>An <code>__init__()</code> method inside the class</p>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>Player properties:</p>
-<ul>
-<li><code>position_x</code></li>
-<li><code>position_y</code></li>
-<li><code>size</code></li>
-<li><code>image</code></li>
-<li><code>sprite</code></li>
-</ul>
-</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-32-create-an-instance-of-player"><a class="header" href="#task-32-create-an-instance-of-player">Task 3.2: Create an instance of player</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>Player</code> class</li>
+        <li>An <code>__init__()</code> method inside the class</li>
+        <li>Player properties:</li>
+        <ul>
+            <li><code>position_x</code></li>
+            <li><code>position_y</code></li>
+            <li><code>size</code></li>
+            <li><code>image</code></li>
+            <li><code>sprite</code></li>
+        </ul>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-32-create-an-instance-of-player"><a class="header" href="#task-32-create-an-instance-of-player">Task 3.2: Create an instance of player</a></h1>
 <ol>
-<li>
-<p>Outside of your class definition (in your main code), create a new player object!</p>
-<h3 id="hint-2"><a class="header" href="#hint-2">Hint:</a></h3>
-<ul>
-<li>Use the class name with brackets <code>()</code> to create a new object.</li>
-<li>Save it into a variable called <code>player</code>.</li>
-</ul>
-</li>
-<li>
-<p>After you create the player instance, print out the player’s important properties to check they were created correctly.</p>
-<h3 id="hints-2"><a class="header" href="#hints-2">Hints:</a></h3>
-<pre><code>- Print the player's `sprite`
-- Print the player's `position_x`
-- Print the player's `position_y`
-- Print the player's `size`
-</code></pre>
-</li>
+<li>Outside of your class definition (in your main code), create a new player object!</li>
 </ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use the class name with brackets <code>()</code> to create a new object.</li>
+        <li>Save it into a variable called <code>player</code>.</li>
+    </ul>
+</div>
+<ol start="2">
+<li>After you create the player instance, print out the player’s important properties to check they were created correctly.</li>
+</ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Print the player's <code>sprite</code>.</li>
+        <li>Print the player's <code>position_x</code>.</li>
+        <li>Print the player's <code>position_y</code>.</li>
+        <li>Print the player's <code>size</code>.</li>
+    </ul>
+</div>
 <h1 id="checkpoints-3"><a class="header" href="#checkpoints-3">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-A player object stored in a variable called <code>player</code></li>
-<li><input disabled="" type="checkbox"/>
-Printouts in terminal</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-33-create-the-draw-method"><a class="header" href="#task-33-create-the-draw-method">Task 3.3: Create the draw method</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A player object stored in a variable called <code>player</code>.</li>
+        <li>Printouts in the terminal showing the player's properties.</li>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-33-create-the-draw-method"><a class="header" href="#task-33-create-the-draw-method">Task 3.3: Create the draw method</a></h1>
 <ol>
-<li>
-<p>Create a new method called <code>draw</code>.</p>
-<h3 id="hint-3"><a class="header" href="#hint-3">Hint:</a></h3>
-<ul>
-<li>Use the <code>def</code> keyword.</li>
-<li>It should be written <strong>inside</strong> your Food class (at the same indentation level as <code>__init__()</code>).</li>
-<li>This method <strong>won’t take any arguments</strong> (only <code>self</code>).</li>
-<li>This method will <strong>draw the food</strong> onto the screen.</li>
-</ul>
-</li>
-<li>
-<p>Draw the Sprite Onto the Screen</p>
-<h3 id="hint-4"><a class="header" href="#hint-4">Hint</a></h3>
-<ul>
-<li>Use <code>screen.blit(...)</code> to draw.</li>
-<li>The first thing you want to draw is the <strong>sprite</strong>.</li>
-<li>The position to draw at is <code>(position_x, position_y)</code>.</li>
-</ul>
-</li>
+<li>Create a new method called <code>draw</code>.</li>
 </ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use the <code>def</code> keyword.</li>
+        <li>It should be written <strong>inside</strong> your Food class (at the same indentation level as <code>__init__()</code>).</li>
+        <li>This method <strong>won’t take any arguments</strong> (only <code>self</code>).</li>
+        <li>This method will <strong>draw the food</strong> onto the screen.</li>
+    </ul>
+</div>
+2. Draw the Sprite Onto the Screen
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use <code>screen.blit(...)</code> to draw.</li>
+        <li>The first thing you want to draw is the <strong>sprite</strong>.</li>
+        <li>The position to draw at is <code>(position_x, position_y)</code>.</li>
+    </ul>
+</div>
 <h1 id="checkpoints-4"><a class="header" href="#checkpoints-4">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-A <code>draw()</code> method inside your Food class which knows how to:
-<ul>
-<li>Draw the sprite</li>
-<li>And place it at the correct position</li>
-</ul>
-</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-34-create-the-move-method"><a class="header" href="#task-34-create-the-move-method">Task 3.4: Create the move method</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>draw()</code> method inside your Food class which knows how to:</li>
+        <ul>
+            <li>Draw the sprite.</li>
+            <li>Place it at the correct position.</li>
+        </ul>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-34-create-the-move-method"><a class="header" href="#task-34-create-the-move-method">Task 3.4: Create the move method</a></h1>
 <ol>
-<li>
-<p>Inside your <code>Player</code> class, define a new method called <code>move()</code>.</p>
-<h3 id="hints-3"><a class="header" href="#hints-3">Hints:</a></h3>
-<pre><code> - Use the `def` keyword.
- - Remember to give it just one parameter: `self`.
-</code></pre>
-</li>
+<li>Inside your <code>Player</code> class, define a new method called <code>move()</code>.</li>
+</ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use the <code>def</code> keyword.</li>
+        <li>Remember to give it just one parameter: <code>self</code>.</li>
+    </ul>
+</div>
+<ol start="2">
 <li>
 <p>Use <code>pygame.key.get_pressed()</code> to check which keys are currently being held down and save the result into a variable</p>
 </li>
@@ -444,52 +466,61 @@ A <code>draw()</code> method inside your Food class which knows how to:
 | <code>A</code> key | Move <strong>left</strong> |
 | <code>S</code> key | Move <strong>down</strong> |
 | <code>D</code> key | Move <strong>right</strong> |</p>
-<h3 id="hints-4"><a class="header" href="#hints-4">Hints:</a></h3>
-<ul>
-<li>If the <code>W</code> key is pressed, <strong>decrease</strong> the y position.</li>
-<li>If the <code>S</code> key is pressed, <strong>increase</strong> the y position.</li>
-<li>If the <code>A</code> key is pressed, <strong>decrease</strong> the x position.</li>
-<li>If the <code>D</code> key is pressed, <strong>increase</strong> the x position.</li>
-</ul>
-</li>
-<li>
-<p>change the player's image depending on the direction they are moving</p>
-<h3 id="hints-5"><a class="header" href="#hints-5">Hints:</a></h3>
-<pre><code> - When moving **up**, change the image to &quot;poco_up.png&quot;
- - When moving **down**, change the image to &quot;poco_down.png&quot;
- - When moving **left**, change the image to &quot;poco_left.png&quot;
- - When moving **right**, change the image to &quot;poco_right.png&quot;
-</code></pre>
 </li>
 </ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>If the <code>W</code> key is pressed, <strong>decrease</strong> the y position.</li>
+        <li>If the <code>S</code> key is pressed, <strong>increase</strong> the y position.</li>
+        <li>If the <code>A</code> key is pressed, <strong>decrease</strong> the x position.</li>
+        <li>If the <code>D</code> key is pressed, <strong>increase</strong> the x position.</li>
+    </ul>
+</div>
+<ol start="4">
+<li>change the player's image depending on the direction they are moving</li>
+</ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>When moving <strong>up</strong>, change the image to <code>poco_up.png</code>.</li>
+        <li>When moving <strong>down</strong>, change the image to <code>poco_down.png</code>.</li>
+        <li>When moving <strong>left</strong>, change the image to <code>poco_left.png</code>.</li>
+        <li>When moving <strong>right</strong>, change the image to <code>poco_right.png</code>.</li>
+    </ul>
+</div>
 <h1 id="checkpoints-5"><a class="header" href="#checkpoints-5">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<p>A <code>move()</code> method inside your Player class</p>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>The method checks which keys are pressed</p>
-</li>
-<li>
-<p>[ ]The method updates the player’s <code>position_x</code> and <code>position_y</code></p>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>The player image changes when moving!</p>
-</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-35-fix-duplicating-poco"><a class="header" href="#task-35-fix-duplicating-poco">Task 3.5: Fix duplicating Poco</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>move()</code> method inside your <code>Player</code> class.</li>
+        <li>The method checks which keys are pressed.</li>
+        <li>The method updates the player’s <code>position_x</code> and <code>position_y</code>.</li>
+        <li>The player image changes when moving!</li>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-35-fix-duplicating-poco"><a class="header" href="#task-35-fix-duplicating-poco">Task 3.5: Fix duplicating Poco</a></h1>
 <ol>
 <li>Inside your <code>while running:</code> game loop, <strong>at the very start</strong> of the loop (before drawing the player or foods), draw the background again over the whole screen.</li>
 </ol>
-<h3 id="hint-5"><a class="header" href="#hint-5">Hint:</a></h3>
-<ul>
-<li>Use <code>screen.blit(, )</code></li>
-</ul>
+<h3 id="hint-1"><a class="header" href="#hint-1">Hint:</a></h3>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use <code>screen.blit(,)</code>.</li>
+    </ul>
+</div>
 <h1 id="checkpoints-6"><a class="header" href="#checkpoints-6">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-Now Poco will move smoothly without leaving any clones behind</li>
-</ul>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>Now Poco will move smoothly without leaving any clones behind.</li>
+    </ul>
+</div>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-4-adding-other-entities"><a class="header" href="#task-4-adding-other-entities">Task 4: Adding other entities</a></h1>
 <p><strong>Goal:</strong> Add multiple entities that are related to each other. In this example we have added food, but you are free to add what you wish, as long as it is appropriate. </p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-41-create-a-food-class"><a class="header" href="#task-41-create-a-food-class">Task 4.1: Create a Food Class</a></h1>
@@ -504,7 +535,7 @@ Now Poco will move smoothly without leaving any clones behind</li>
 <p>Inside your <code>Food</code> class, create a special function called <code>__init__</code>.</p>
 </li>
 </ol>
-<h3 id="hints-6"><a class="header" href="#hints-6">Hints:</a></h3>
+<h3 id="hints"><a class="header" href="#hints">Hints:</a></h3>
 <ul>
 <li>Use the <code>def</code> keyword to define the method.</li>
 <li>The <code>__init__</code> method should accept <strong>4 inputs</strong>:
@@ -544,7 +575,7 @@ Now Poco will move smoothly without leaving any clones behind</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-42-create-a-food-dictionary"><a class="header" href="#task-42-create-a-food-dictionary">Task 4.2: Create a Food Dictionary</a></h1>
 <ol>
 <li>Create a dictionary called <code>foods</code>, this dictionary will hold all the food items you want to appear in your game.
-<h3 id="hint-6"><a class="header" href="#hint-6">Hint:</a></h3>
+<h3 id="hint-2"><a class="header" href="#hint-2">Hint:</a></h3>
 <ul>
 <li>Use curly braces <code>{}</code> to create a dictionary.</li>
 <li>Save it in your main code <strong>before</strong> your game loop starts.</li>
@@ -571,7 +602,7 @@ Now Poco will move smoothly without leaving any clones behind</li>
 <li>Create a new empty list called <code>active_foods</code>, this list will store all the Food objects you create.</li>
 <li>Write a <code>for</code> loop that goes through every item in your <code>foods</code> dictionary. In each loop, you will create a new Food object.</li>
 </ol>
-<h3 id="hint-7"><a class="header" href="#hint-7">Hint:</a></h3>
+<h3 id="hint-3"><a class="header" href="#hint-3">Hint:</a></h3>
 <ul>
 <li>Use <code>.items()</code> to loop through both the <strong>key</strong> and <strong>value</strong>.</li>
 <li>The key will be the <strong>name</strong> of the food.</li>
@@ -583,7 +614,7 @@ Now Poco will move smoothly without leaving any clones behind</li>
 </ul>
 <ol start="3">
 <li>Create a New Food Object for Each Item
-<h3 id="hint-8"><a class="header" href="#hint-8">Hint:</a></h3>
+<h3 id="hint-4"><a class="header" href="#hint-4">Hint:</a></h3>
 <ul>
 <li><code>key</code> -&gt; name</li>
 <li><code>value[0]</code> -&gt; image path</li>
@@ -610,7 +641,7 @@ A loop that:
 <ol>
 <li>Create a new method called <code>draw</code>.</li>
 </ol>
-<h3 id="hint-9"><a class="header" href="#hint-9">Hint:</a></h3>
+<h3 id="hint-5"><a class="header" href="#hint-5">Hint:</a></h3>
 <ul>
 <li>Use the <code>def</code> keyword.</li>
 <li>It should be written <strong>inside</strong> your Food class (at the same indentation level as <code>__init__()</code>).</li>
@@ -621,7 +652,7 @@ A loop that:
 <ol start="2">
 <li>Draw the Sprite Onto the Screen</li>
 </ol>
-<h3 id="hint-10"><a class="header" href="#hint-10">Hint</a></h3>
+<h3 id="hint-6"><a class="header" href="#hint-6">Hint</a></h3>
 <ul>
 <li>Use <code>screen.blit(...)</code> to draw.</li>
 <li>The first thing you want to draw is the <strong>sprite</strong> (image).</li>
@@ -674,7 +705,7 @@ A <code>draw()</code> method inside your Food class which knows how to:
 <li>Create a <strong>method</strong> called <code>update(self)</code> in the player class. Copy the property you just wrote into this method.</li>
 <li>Call the player update method in the main game loop, just underneath <code>player.draw()</code></li>
 </ol>
-<h3 id="hint-11"><a class="header" href="#hint-11">Hint</a></h3>
+<h3 id="hint-7"><a class="header" href="#hint-7">Hint</a></h3>
 <pre><code class="language-python"># sprite.get_rect() creates a rectangle the size of the image
 # .move() moves whatever it's attached to to an x and y coordinate
 self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)
@@ -685,7 +716,7 @@ self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)
 <li>Use the colliderect to check whether the rectangular hitboxes are colliding </li>
 <li>If they are colliding, remove food from the active_foods list</li>
 </ol>
-<h3 id="hint-12"><a class="header" href="#hint-12">Hint</a></h3>
+<h3 id="hint-8"><a class="header" href="#hint-8">Hint</a></h3>
 <pre><code class="language-python"># Collision is True is the hitboxes are colliding and False if not
 collision = self.hitbox.colliderect(food.hitbox) 
 </code></pre>
@@ -701,14 +732,14 @@ features of your game.</p>
 <ol>
 <li>If the the player picks up all the items or the score is equal to the number of items, then end the game and quit.</li>
 </ol>
-<h3 id="hints-7"><a class="header" href="#hints-7">Hints</a></h3>
+<h3 id="hints-1"><a class="header" href="#hints-1">Hints</a></h3>
 <p>Perhaps setting <code>running = False</code> will do something.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-63-show-the-score-on-the-screen"><a class="header" href="#task-63-show-the-score-on-the-screen">Task 6.3: Show the score on the screen</a></h1>
 <ol>
 <li>Render the score on the screen. We can use <code>font.render()</code>.</li>
 <li><code>blit</code> the text onto the screen. Experiment with where you would put the score!</li>
 </ol>
-<h3 id="hints-8"><a class="header" href="#hints-8">Hints</a></h3>
+<h3 id="hints-2"><a class="header" href="#hints-2">Hints</a></h3>
 <pre><code class="language-python"># Setting fonts in pygame
 colour = (256, 256, 256) # (R,G,B)
 

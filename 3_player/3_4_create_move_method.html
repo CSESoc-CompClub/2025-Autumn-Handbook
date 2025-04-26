@@ -175,13 +175,17 @@
                     <main>
                         <h1 id="task-34-create-the-move-method"><a class="header" href="#task-34-create-the-move-method">Task 3.4: Create the move method</a></h1>
 <ol>
-<li>
-<p>Inside your <code>Player</code> class, define a new method called <code>move()</code>.</p>
-<h3 id="hints"><a class="header" href="#hints">Hints:</a></h3>
-<pre><code> - Use the `def` keyword.
- - Remember to give it just one parameter: `self`.
-</code></pre>
-</li>
+<li>Inside your <code>Player</code> class, define a new method called <code>move()</code>.</li>
+</ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use the <code>def</code> keyword.</li>
+        <li>Remember to give it just one parameter: <code>self</code>.</li>
+    </ul>
+</div>
+<ol start="2">
 <li>
 <p>Use <code>pygame.key.get_pressed()</code> to check which keys are currently being held down and save the result into a variable</p>
 </li>
@@ -193,40 +197,42 @@
 | <code>A</code> key | Move <strong>left</strong> |
 | <code>S</code> key | Move <strong>down</strong> |
 | <code>D</code> key | Move <strong>right</strong> |</p>
-<h3 id="hints-1"><a class="header" href="#hints-1">Hints:</a></h3>
-<ul>
-<li>If the <code>W</code> key is pressed, <strong>decrease</strong> the y position.</li>
-<li>If the <code>S</code> key is pressed, <strong>increase</strong> the y position.</li>
-<li>If the <code>A</code> key is pressed, <strong>decrease</strong> the x position.</li>
-<li>If the <code>D</code> key is pressed, <strong>increase</strong> the x position.</li>
-</ul>
-</li>
-<li>
-<p>change the player's image depending on the direction they are moving</p>
-<h3 id="hints-2"><a class="header" href="#hints-2">Hints:</a></h3>
-<pre><code> - When moving **up**, change the image to &quot;poco_up.png&quot;
- - When moving **down**, change the image to &quot;poco_down.png&quot;
- - When moving **left**, change the image to &quot;poco_left.png&quot;
- - When moving **right**, change the image to &quot;poco_right.png&quot;
-</code></pre>
 </li>
 </ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>If the <code>W</code> key is pressed, <strong>decrease</strong> the y position.</li>
+        <li>If the <code>S</code> key is pressed, <strong>increase</strong> the y position.</li>
+        <li>If the <code>A</code> key is pressed, <strong>decrease</strong> the x position.</li>
+        <li>If the <code>D</code> key is pressed, <strong>increase</strong> the x position.</li>
+    </ul>
+</div>
+<ol start="4">
+<li>change the player's image depending on the direction they are moving</li>
+</ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>When moving <strong>up</strong>, change the image to <code>poco_up.png</code>.</li>
+        <li>When moving <strong>down</strong>, change the image to <code>poco_down.png</code>.</li>
+        <li>When moving <strong>left</strong>, change the image to <code>poco_left.png</code>.</li>
+        <li>When moving <strong>right</strong>, change the image to <code>poco_right.png</code>.</li>
+    </ul>
+</div>
 <h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<p>A <code>move()</code> method inside your Player class</p>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>The method checks which keys are pressed</p>
-</li>
-<li>
-<p>[ ]The method updates the player’s <code>position_x</code> and <code>position_y</code></p>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>The player image changes when moving!</p>
-</li>
-</ul>
-
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>move()</code> method inside your <code>Player</code> class.</li>
+        <li>The method checks which keys are pressed.</li>
+        <li>The method updates the player’s <code>position_x</code> and <code>position_y</code>.</li>
+        <li>The player image changes when moving!</li>
+    </ul>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
