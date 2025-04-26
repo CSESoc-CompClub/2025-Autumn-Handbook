@@ -179,11 +179,15 @@
 <li>Use the colliderect to check whether the rectangular hitboxes are colliding </li>
 <li>If they are colliding, remove food from the active_foods list</li>
 </ol>
-<h3 id="hint"><a class="header" href="#hint">Hint</a></h3>
-<pre><code class="language-python"># Collision is True is the hitboxes are colliding and False if not
-collision = self.hitbox.colliderect(food.hitbox) 
-</code></pre>
-
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b><p>
+    <ul style="width: 100%;">  
+        <li> Check if the player hitbox is colliding with the food hitbox:<br>
+        <code>collision = self.hitbox.colliderect(food.hitbox)</code>
+        </li>
+        <li>The collision variable is True if the hitboxes are colliding and False if not</li>
+    </ul>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

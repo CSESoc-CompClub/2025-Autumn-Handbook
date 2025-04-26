@@ -262,8 +262,8 @@
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>💡 Hint</b><p>
     <ul>  
-        <li>Make a for loop: <pre style="display: inline;">for event in pygame.event.get()</pre></li>
-        <li>If the player closes the game <pre style="display: inline;">event.type == pygame.QUIT</pre>, you need to set a certain variable to False</li>
+        <li>Make a for loop: <code>for event in pygame.event.get()</code></li>
+        <li>If the player closes the game <code>event.type == pygame.QUIT</code>, you need to set a certain variable to False</li>
     </ul>
 </div>
 <ol start="5">
@@ -287,9 +287,9 @@
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
     <ul>  
-        <li>A <pre style="display: inline;">background_image</pre> variable (path to the image)</li>
-        <li>A <pre style="display: inline;">background</pre> variable (the scaled loaded image)</li>
-        <li>A <pre style="display: inline;">screen.blit(variable, coordinate)</pre> line inside your <pre style="display: inline;">while running:</pre> loop</li>
+        <li>A <code>background_image</code> variable (path to the image)</li>
+        <li>A <code>background</code> variable (the scaled loaded image)</li>
+        <li>A <code>screen.blit(variable, coordinate)</code> line inside your <code>while running:</code> loop</li>
         <li>A background showing up instead of a black screen!</li>
     </ul>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-24-add-a-game-title-and-app-icon"><a class="header" href="#task-24-add-a-game-title-and-app-icon">Task 2.4: Add a Game Title and App Icon</a></h1>
@@ -701,22 +701,30 @@ A <code>draw()</code> method inside your Food class which knows how to:
 <li>Create a <strong>method</strong> called <code>update(self)</code> in the player class. Copy the property you just wrote into this method.</li>
 <li>Call the player update method in the main game loop, just underneath <code>player.draw()</code></li>
 </ol>
-<h3 id="hint-6"><a class="header" href="#hint-6">Hint</a></h3>
-<pre><code class="language-python"># sprite.get_rect() creates a rectangle the size of the image
-# .move() moves whatever it's attached to to an x and y coordinate
-self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)
-</code></pre>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b><p>
+    <ul style="width: 100%;">  
+        <li><code>sprite.get_rect()</code> creates a rectangle the size of the image</li>
+        <li><code>.move()</code> moves whatever it's attached to to an x and y coordinate</li>
+        <li>To combine these into a hitbox you can have:
+        <pre style="display: inline; font-size:80%;">self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)</code></li>
+    </ul>
+</div>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-52-check-whether-two-hitboxes-are-colliding"><a class="header" href="#task-52-check-whether-two-hitboxes-are-colliding">Task 5.2: Check whether two hitboxes are colliding</a></h1>
 <ol>
 <li>Create a property called <code>interact_foods(self, food)</code> in the food class</li>
 <li>Use the colliderect to check whether the rectangular hitboxes are colliding </li>
 <li>If they are colliding, remove food from the active_foods list</li>
 </ol>
-<h3 id="hint-7"><a class="header" href="#hint-7">Hint</a></h3>
-<pre><code class="language-python"># Collision is True is the hitboxes are colliding and False if not
-collision = self.hitbox.colliderect(food.hitbox) 
-</code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-6-finishing-the-game"><a class="header" href="#task-6-finishing-the-game">Task 6: Finishing the game.</a></h1>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b><p>
+    <ul style="width: 100%;">  
+        <li> Check if the player hitbox is colliding with the food hitbox:<br>
+        <code>collision = self.hitbox.colliderect(food.hitbox)</code>
+        </li>
+        <li>The collision variable is True if the hitboxes are colliding and False if not</li>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-6-finishing-the-game"><a class="header" href="#task-6-finishing-the-game">Task 6: Finishing the game.</a></h1>
 <p><strong>Goal:</strong> Add a score, a win condition. Finishing this task finishes the basic
 features of your game.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-61-create-a-player-score"><a class="header" href="#task-61-create-a-player-score">Task 6.1: Create a player score</a></h1>
