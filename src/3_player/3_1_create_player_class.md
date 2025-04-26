@@ -1,4 +1,4 @@
-# Task 2.1 Create a player class
+# Task 3.1 Create a player class
 
 Your task is to create a player class with the following properties
 - name
