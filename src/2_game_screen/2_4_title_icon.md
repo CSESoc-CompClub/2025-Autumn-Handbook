@@ -4,9 +4,12 @@
 2. **load an image** using `pygame.image.load(...)`
 3. use Pygame function `pygame.display.set_icon()` to set the image.
 4. The path to your icon should be something like this: "images/game_icon.png"
----
-# Checkpoints
 
-- [ ] Have your customised game title
-
-- [ ] Have your customised icon
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
+    <ul>  
+        <li>Have your customised game title</li>
+        <li>Have your customised icon</li>
+    </ul>
+</div>
