@@ -179,36 +179,36 @@
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-11-make-python-file"><a class="header" href="#task-11-make-python-file">Task 1.1: Make Python File</a></h1>
 <ol>
 <li>
-<p>In VS Code, click on <strong>File</strong> and then <strong>New File...</strong></p>
+<p>In VS Code, click on <strong>File</strong> and then <strong>New File</strong></p>
 <p><img src="1_set_up/../images/create_files/1.png" alt="File" /></p>
 <p><img src="1_set_up/../images/create_files/2.png" alt="New File" /></p>
-<p>You should see something like this pop up <strong>after you cilck 'New File'</strong>
+<p>You should see something like this pop up <strong>after you click 'New File'</strong>
 <img src="1_set_up/../images/create_files/3.png" alt="Pop Up" /></p>
 </li>
 <li>
 <p>Enter the name of your file (e.g. 'my_game.py')
 <img src="1_set_up/../images/create_files/5.png" alt="my_game.py" /></p>
-<p><span style="font-size: 24px;">```
-NOTE:<br />
-It’s super important to include <strong><code>.py</code></strong> at the end of the file name so VS Code knows it's Python code!</p>
-<pre><code class="language-&lt;/span&gt;">
-
-</code></pre>
+<span style="font-size: 24px;">
+ Note:  
+     It’s super important to include .py at the end of the file name so VS Code knows it's Python code!
+ </span>
 </li>
 <li>
 <p>Press <strong>'ENTER'</strong> and something looks like this should pop up
 <img src="1_set_up/../images/create_files/8.png" alt="my_game.py" /></p>
 </li>
 <li>
-<p>Press <strong>'Desktop'</strong> and then <strong>'Create File'</strong> to save your file to the Desktop
-<img src="1_set_up/../images/create_files/6.png" alt="my_game.py" /></p>
+<p>Press <strong>'Desktop'</strong> and then <strong>'Create File'</strong> to save your file to the Desktop</p>
 </li>
 </ol>
-<p><img src="1_set_up/../images/create_files/7.png" alt="my_game.py" /></p>
+<div style="display: flex; justify-content: center; gap: 10px">
+    <img src="1_set_up/../images/create_files/6.png" width="40%" height="20%"/> 
+    <img src="1_set_up/../images/create_files/7.png" width="40%" height="20%"/>
+</div>
 <ol start="5">
-<li><strong>AND NOW YOU HAVE CREATED YOUR PYTHON FILE!!! YOU CAN START CODING</strong>
-<img src="1_set_up/../images/create_files/9.png" alt="my_game.py" /></li>
+<li>Congratulations! You have created you python file! You can now start coding :)</li>
 </ol>
+<p><img src="1_set_up/../images/create_files/9.png" alt="my_game.py" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-12-import-pygame"><a class="header" href="#task-12-import-pygame">Task 1.2: Import Pygame</a></h1>
 <p>Now that you have created your Python file, it's time to start setting it up for Pygame!</p>
 <ol>
@@ -227,32 +227,35 @@ It’s super important to include <strong><code>.py</code></strong> at the end o
 <p>Before we make our game we need to set up the screen to display it!</p>
 <ol>
 <li>
-<p>Make a screen that is 800 pixels wide and 600 pixels tall</p>
-<p>For example:
-To make a screen that is 100 pixels wide and 200 pixels tall you could use this code</p>
+<p>Create some variables that will hold the width and the height. 800 pixels wide and 600 pixels tall</p>
+<p>E.g. A screen that is 100 pixels wide and 200 pixels could have these variables:</p>
 <pre><code class="language-python">    WIDTH = 100
     HEIGHT = 200
 </code></pre>
 </li>
+<li>
+<p>Create a window of that size and assign it to screen like so:</p>
+</li>
 </ol>
-<hr />
-<ol start="2">
-<li>Create a window** of that size using the Pygame function <code>pygame.display.set_mode()</code></li>
-</ol>
-<hr />
-<h2 id="you-cannot-see-your-screen-yet"><a class="header" href="#you-cannot-see-your-screen-yet">YOU CANNOT SEE YOUR SCREEN YET</a></h2>
-<h2 id="you-must-complete-task-12-first-before-you-can-see-a-screen-when-you-run-your-pygame"><a class="header" href="#you-must-complete-task-12-first-before-you-can-see-a-screen-when-you-run-your-pygame">You must <strong>complete Task 1.2</strong> first BEFORE YOU CAN SEE A SCREEN WHEN YOU RUN YOUR PYGAME!</a></h2>
-<h2 id="checkpoint"><a class="header" href="#checkpoint">Checkpoint</a></h2>
-<ul>
-<li><input disabled="" type="checkbox"/>
-Two variables for width and height</li>
-<li><input disabled="" type="checkbox"/>
-A screen object created using Pygame and your variables</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-22-create-game-loop"><a class="header" href="#task-22-create-game-loop">Task 2.2: Create Game Loop</a></h1>
+<pre><code class="language-python">pygame.display.set_mode(WIDTH, HEIGHT)
+</code></pre>
+<br>
+<div style="font-size: 20px; background-color: #96a1de; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>📝 Note</b><p>
+    <p>  
+        Running your game will cause your program to crash. You must <b>complete Task 1.2</b> before you can see a screen when you run your pygame.
+    </p>
+</div>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
+    <ul>  
+        <li>Two variables for width and height</li>
+        <li>A screen object created using Pygame and your variables</li>
+    </ul><div style="break-before: page; page-break-before: always;"></div><h1 id="task-22-create-game-loop"><a class="header" href="#task-22-create-game-loop">Task 2.2: Create Game Loop</a></h1>
 <ol>
 <li>Use a variable called <strong><code>running</code></strong> and set it to <strong>True</strong> at the start</li>
-<li>Then you need a <strong>while</strong> loop which <strong>keep looping while the game is running</strong>.</li>
+<li>Make a <strong>while</strong> loop which will <strong>keep looping while the game is running</strong>.</li>
 <li>Inside your <code>while running:</code> loop, you need to <strong>check what the player is doing</strong>.
 <h3 id="hint"><a class="header" href="#hint">Hint:</a></h3>
 <ul>
@@ -263,16 +266,15 @@ A screen object created using Pygame and your variables</li>
 </li>
 <li>At the end of your while loop,  refresh the screen with <code>pygame.display.update()</code></li>
 </ol>
-<hr />
-<h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-No crashing! Your window should stay open until you click the X!</li>
-<li><input disabled="" type="checkbox"/>
-You should see something like this:
-<img src="2_game_screen/../images/game_window/1.png" alt="black game window" /></li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-23-add-background-image"><a class="header" href="#task-23-add-background-image">Task 2.3: Add Background Image</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
+    <ul>  
+        <li>No crashing! Your window should stay open until you click the X!</li>
+        <li>You should see something like this:</li>
+        <img src="2_game_screen/../images/game_window/1.png"/>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-23-add-background-image"><a class="header" href="#task-23-add-background-image">Task 2.3: Add Background Image</a></h1>
 <ol>
 <li>First save the image path as a <strong>variable</strong>: e.g.<code>background_image = &quot;images/background/wooden_floor.jpeg&quot;</code></li>
 <li>Then load it using <code>pygame.image.load(background_image)</code></li>
@@ -280,7 +282,7 @@ You should see something like this:
 <li><strong>draw the background</strong> onto the screen use <code>screen.blit(...)</code></li>
 </ol>
 <hr />
-<h1 id="checkpoints-1"><a class="header" href="#checkpoints-1">Checkpoints</a></h1>
+<h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 A <code>background_image</code> variable (path to the image)</li>
@@ -299,7 +301,7 @@ A background showing up instead of a black screen!</li>
 <li>The path to your icon should be something like this: &quot;images/game_icon.png&quot;</li>
 </ol>
 <hr />
-<h1 id="checkpoints-2"><a class="header" href="#checkpoints-2">Checkpoints</a></h1>
+<h1 id="checkpoints-1"><a class="header" href="#checkpoints-1">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 <p>Have your customised game title</p>
@@ -344,7 +346,7 @@ A background showing up instead of a black screen!</li>
 </li>
 </ol>
 <hr />
-<h1 id="checkpoints-3"><a class="header" href="#checkpoints-3">Checkpoints</a></h1>
+<h1 id="checkpoints-2"><a class="header" href="#checkpoints-2">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 <p>A <code>Player</code> class</p>
@@ -383,7 +385,7 @@ A background showing up instead of a black screen!</li>
 </code></pre>
 </li>
 </ol>
-<h1 id="checkpoints-4"><a class="header" href="#checkpoints-4">Checkpoints</a></h1>
+<h1 id="checkpoints-3"><a class="header" href="#checkpoints-3">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 A player object stored in a variable called <code>player</code></li>
@@ -412,7 +414,7 @@ Printouts in terminal</li>
 </ul>
 </li>
 </ol>
-<h1 id="checkpoints-5"><a class="header" href="#checkpoints-5">Checkpoints</a></h1>
+<h1 id="checkpoints-4"><a class="header" href="#checkpoints-4">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 A <code>draw()</code> method inside your Food class which knows how to:
@@ -460,7 +462,7 @@ A <code>draw()</code> method inside your Food class which knows how to:
 </code></pre>
 </li>
 </ol>
-<h1 id="checkpoints-6"><a class="header" href="#checkpoints-6">Checkpoints</a></h1>
+<h1 id="checkpoints-5"><a class="header" href="#checkpoints-5">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 <p>A <code>move()</code> method inside your Player class</p>
@@ -483,7 +485,7 @@ A <code>draw()</code> method inside your Food class which knows how to:
 <ul>
 <li>Use <code>screen.blit(, )</code></li>
 </ul>
-<h1 id="checkpoints-7"><a class="header" href="#checkpoints-7">Checkpoints</a></h1>
+<h1 id="checkpoints-6"><a class="header" href="#checkpoints-6">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 Now Poco will move smoothly without leaving any clones behind</li>
@@ -522,7 +524,7 @@ Now Poco will move smoothly without leaving any clones behind</li>
 <li>Save the final scaled image into the object (e.g., <code>self.sprite</code>).</li>
 </ol>
 <hr />
-<h1 id="checkpoints-8"><a class="header" href="#checkpoints-8">Checkpoints</a></h1>
+<h1 id="checkpoints-7"><a class="header" href="#checkpoints-7">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 <p>A <code>Food</code> class (or a class of things you want to have)</p>
@@ -591,7 +593,7 @@ Now Poco will move smoothly without leaving any clones behind</li>
 </li>
 </ol>
 <hr />
-<h1 id="checkpoints-9"><a class="header" href="#checkpoints-9">Checkpoints</a></h1>
+<h1 id="checkpoints-8"><a class="header" href="#checkpoints-8">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 An empty <code>active_foods</code> list created</li>
@@ -626,7 +628,7 @@ A loop that:
 <li>The position to draw at is <code>(position_x, position_y)</code>.</li>
 </ul>
 <hr />
-<h1 id="checkpoints-10"><a class="header" href="#checkpoints-10">Checkpoints</a></h1>
+<h1 id="checkpoints-9"><a class="header" href="#checkpoints-9">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 A <code>draw()</code> method inside your Food class which knows how to:

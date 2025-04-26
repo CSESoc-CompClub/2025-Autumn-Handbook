@@ -177,29 +177,32 @@
 <p>Before we make our game we need to set up the screen to display it!</p>
 <ol>
 <li>
-<p>Make a screen that is 800 pixels wide and 600 pixels tall</p>
-<p>For example:
-To make a screen that is 100 pixels wide and 200 pixels tall you could use this code</p>
+<p>Create some variables that will hold the width and the height. 800 pixels wide and 600 pixels tall</p>
+<p>E.g. A screen that is 100 pixels wide and 200 pixels could have these variables:</p>
 <pre><code class="language-python">    WIDTH = 100
     HEIGHT = 200
 </code></pre>
 </li>
+<li>
+<p>Create a window of that size and assign it to screen like so:</p>
+</li>
 </ol>
-<hr />
-<ol start="2">
-<li>Create a window** of that size using the Pygame function <code>pygame.display.set_mode()</code></li>
-</ol>
-<hr />
-<h2 id="you-cannot-see-your-screen-yet"><a class="header" href="#you-cannot-see-your-screen-yet">YOU CANNOT SEE YOUR SCREEN YET</a></h2>
-<h2 id="you-must-complete-task-12-first-before-you-can-see-a-screen-when-you-run-your-pygame"><a class="header" href="#you-must-complete-task-12-first-before-you-can-see-a-screen-when-you-run-your-pygame">You must <strong>complete Task 1.2</strong> first BEFORE YOU CAN SEE A SCREEN WHEN YOU RUN YOUR PYGAME!</a></h2>
-<h2 id="checkpoint"><a class="header" href="#checkpoint">Checkpoint</a></h2>
-<ul>
-<li><input disabled="" type="checkbox"/>
-Two variables for width and height</li>
-<li><input disabled="" type="checkbox"/>
-A screen object created using Pygame and your variables</li>
-</ul>
-
+<pre><code class="language-python">pygame.display.set_mode(WIDTH, HEIGHT)
+</code></pre>
+<br>
+<div style="font-size: 20px; background-color: #96a1de; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>📝 Note</b><p>
+    <p>  
+        Running your game will cause your program to crash. You must <b>complete Task 1.2</b> before you can see a screen when you run your pygame.
+    </p>
+</div>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
+    <ul>  
+        <li>Two variables for width and height</li>
+        <li>A screen object created using Pygame and your variables</li>
+    </ul>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
