@@ -1,4 +1,4 @@
-# Task 3.1: Create a Food Class
+# Task 4.1: Create a Food Class
 
 1. Start by creating a new class called `Food`.
     ### Example:
