@@ -7,3 +7,4 @@
         - [Task 0.3: import Pygame](Pygame.md)
 
     - TASK 1: INITIALISING
+        - [Task 1.1: ]
