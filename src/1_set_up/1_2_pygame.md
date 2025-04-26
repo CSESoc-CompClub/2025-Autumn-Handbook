@@ -1,4 +1,4 @@
-# Task 0.3: Import Pygame
+# Task 1.2: Import Pygame
 Now that you have created your Python file, it's time to start setting it up for Pygame!
 
 ## Step 1: Import the Pygame Module

@@ -1,4 +1,4 @@
-# Task 1.1: Create Game Screen
+# Task 2.1: Create Game Screen
 Now that Pygame is ready, it’s time to make your game window!
 
 ## Step 1: Screen Size

@@ -1,4 +1,4 @@
-# Task 1.2: Create Game Loop
+# Task 2.2: Create Game Loop
 
 Now that you have set up your screen, you need to make sure the window stays open!
 

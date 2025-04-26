@@ -1,4 +1,4 @@
-# Task 3.2: Create a Food Dictionary
+# Task 4.2: Create a Food Dictionary
 
 Now that we have a Food class ready, it's time to create a **dictionary** to store all the different food items!
 

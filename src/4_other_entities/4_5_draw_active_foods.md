@@ -1,4 +1,4 @@
-# Task 3.5: Draw Active Foods in Game Loop
+# Task 4.5: Draw Active Foods in Game Loop
 
 Now that each Food knows how to draw itself, it's time to actually **draw all the food** onto your game window during the game!
 

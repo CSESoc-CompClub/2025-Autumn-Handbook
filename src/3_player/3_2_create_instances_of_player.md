@@ -1,4 +1,4 @@
-# Task 2.2: Create an instance of player
+# Task 3.2: Create an instance of player
 
 Your task is to create an instance of the player class. 
 

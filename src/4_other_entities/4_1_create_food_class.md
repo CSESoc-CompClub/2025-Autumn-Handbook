@@ -1,4 +1,4 @@
-# Task 3.1: Create a Food Class
+# Task 4.1: Create a Food Class
 
 In this task, you will create a **Food class** that acts as a blueprint for the food items (or anything else!) in your game.
 

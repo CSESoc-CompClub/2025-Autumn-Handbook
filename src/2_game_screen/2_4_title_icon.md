@@ -1,4 +1,4 @@
-# Task 1.4: Add a Game Title and App Icon
+# Task 2.4: Add a Game Title and App Icon
 
 Now let’s make your game window even cooler!  
 Instead of saying "pygame window" at the top, and have the snake as the icon you can give your game a **custom title** and a **custom icon**!

@@ -1,4 +1,4 @@
-# Task 2.3: Create the draw method
+# Task 3.3: Create the draw method
 
 Under the player method, we need to create a draw method().
 How might we create a method inside a class? If you are stuck have a read [here](https://www.w3schools.com/python/python_classes.asp).

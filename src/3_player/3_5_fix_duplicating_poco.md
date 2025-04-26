@@ -1,4 +1,4 @@
-# Task 2.5: Fix duplicating Poco
+# Task 3.5: Fix duplicating Poco
 
 We’re going to fix the trailing images issue by re-drawing the background to the screen
 every time the game loops.

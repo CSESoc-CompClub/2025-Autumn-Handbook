@@ -1,4 +1,4 @@
-# Task 5.3: Show the score on the screen
+# Task 6.3: Show the score on the screen
 
 ## Step 1.
 

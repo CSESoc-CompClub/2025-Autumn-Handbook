@@ -1,4 +1,4 @@
-# Task 1.3: Add Background Image
+# Task 2.3: Add Background Image
 
 Now it’s time to make your game look cooler by adding a background!
 

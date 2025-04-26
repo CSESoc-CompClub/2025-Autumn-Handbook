@@ -1,4 +1,4 @@
-# Task 0.2: Make Python File
+# Task 1.1: Make Python File
 
 Now that you have VS Code open, it’s time to create your Python file!
 
