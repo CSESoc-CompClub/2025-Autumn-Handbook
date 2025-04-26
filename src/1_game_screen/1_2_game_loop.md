@@ -46,14 +46,13 @@ you need to **check what the player is doing**.
 
 At the end of your while loop,  refresh the screen:
 
-```
-Hint:
+
+### Hint:
 - Use `pygame.display.update()`
-```
+
 ---
 
 # Checkpoints
-
 - [ ] No crashing! Your window should stay open until you click the X!
 - [ ] You should see something like this:
     ![black game window](../images/game_window/1.png)
