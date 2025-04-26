@@ -174,48 +174,6 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="task-12-create-game-loop"><a class="header" href="#task-12-create-game-loop">Task 1.2: Create Game Loop</a></h1>
-<p>Now that you have set up your screen, you need to make sure the window stays open!</p>
-<p>Without a special piece of code, your game window will open <strong>for less than a second</strong> and then immediately <strong>close</strong>!</p>
-<p>To keep your game running, you need a <strong>loop</strong> that keeps checking:</p>
-<ul>
-<li>Is the game still open?</li>
-<li>Did the player click the close (X) button?</li>
-</ul>
-<hr />
-<h2 id="step-1-create-a-running-variable"><a class="header" href="#step-1-create-a-running-variable">Step 1: Create a &quot;Running&quot; Variable</a></h2>
-<p>First, you need a variable that ley Python check: Should the game keep running?</p>
-<pre><code>Hint:  
-Use a variable called **`running`** and set it to **True** at the start
-</code></pre>
-<hr />
-<h2 id="step-2-build-a-loop"><a class="header" href="#step-2-build-a-loop">Step 2: Build a Loop</a></h2>
-<p>Then you need a <strong>while</strong> loop.</p>
-<pre><code class="language-Hint:">- It should say something like `while running:` 
-- This means &quot;**keep looping while the game is running**&quot;.
-</code></pre>
-<hr />
-<h2 id="step-3-handle-player-events"><a class="header" href="#step-3-handle-player-events">Step 3: Handle Player Events</a></h2>
-<p>Inside your <code>while running:</code> loop,<br />
-you need to <strong>check what the player is doing</strong>.</p>
-<pre><code class="language-Hint:">- Use `for event in pygame.event.get():`
-- Go through all the events (like mouse clicks, window close, etc.)
-- If the player close the game (event.type == pygame.QUIT`), you need to **stop the loop**!
-</code></pre>
-<hr />
-<h2 id="step-4-update-the-screen-every-frame"><a class="header" href="#step-4-update-the-screen-every-frame">Step 4: Update the Screen Every Frame</a></h2>
-<p>At the end of your while loop,  refresh the screen:</p>
-<pre><code>Hint:
-- Use `pygame.display.update()`
-</code></pre>
-<hr />
-<h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-No crashing! Your window should stay open until you click the X!</li>
-<li><input disabled="" type="checkbox"/>
-You should see something like this:
-<img src="../images/game_window/1.png" alt="black game window" /></li>
-</ul>
 
                     </main>
 
