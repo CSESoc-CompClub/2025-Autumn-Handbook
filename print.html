@@ -254,19 +254,21 @@
         <li>A screen object created using Pygame and your variables</li>
     </ul><div style="break-before: page; page-break-before: always;"></div><h1 id="task-22-create-game-loop"><a class="header" href="#task-22-create-game-loop">Task 2.2: Create Game Loop</a></h1>
 <ol>
-<li>Use a variable called <strong><code>running</code></strong> and set it to <strong>True</strong> at the start</li>
-<li>Make a <strong>while</strong> loop which will <strong>keep looping while the game is running</strong>.</li>
-<li>Inside your <code>while running:</code> loop, you need to <strong>check what the player is doing</strong>.
-<h3 id="hint"><a class="header" href="#hint">Hint:</a></h3>
-<ul>
-<li>Use <code>for event in pygame.event.get():</code></li>
-<li>Go through all the events (like mouse clicks, window close, etc.)</li>
-<li>If the player close the game (event.type == pygame.QUIT`), you need to <strong>stop the loop</strong>!</li>
-</ul>
-</li>
+<li>Use a variable called <code>running</code> and set it to <code>True</code> at the start</li>
+<li>Make a <code>while</code> loop which will keep looping while the game is running.</li>
+<li>Inside your <code>while running:</code> loop, loop through each event type and check quit the game if the event type is quit. </li>
+<li>Inside your <code>while running:</code> loop, update the display</li>
+</ol>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b><p>
+    <ul>  
+        <li>Make a for loop: <pre style="display: inline;">for event in pygame.event.get()</pre></li>
+        <li>If the player closes the game <pre style="display: inline;">event.type == pygame.QUIT</pre>, you need to set a certain variable to False</li>
+    </ul>
+</div>
+<ol start="5">
 <li>At the end of your while loop,  refresh the screen with <code>pygame.display.update()</code></li>
 </ol>
-<br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
     <ul>  
@@ -276,41 +278,35 @@
     </ul>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-23-add-background-image"><a class="header" href="#task-23-add-background-image">Task 2.3: Add Background Image</a></h1>
 <ol>
-<li>First save the image path as a <strong>variable</strong>: e.g.<code>background_image = &quot;images/background/wooden_floor.jpeg&quot;</code></li>
+<li>Save the image path as a <strong>variable</strong>: e.g.<code>background_image = &quot;images/background/wooden_floor.jpeg&quot;</code></li>
 <li>Then load it using <code>pygame.image.load(background_image)</code></li>
-<li>make sure the background <strong>fits</strong> the window Use <code>pygame.transform.scale(...)</code></li>
+<li>Make sure the background <strong>fits</strong> the window Use <code>pygame.transform.scale(...)</code></li>
 <li><strong>draw the background</strong> onto the screen use <code>screen.blit(...)</code></li>
 </ol>
-<hr />
-<h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-A <code>background_image</code> variable (path to the image)</li>
-<li><input disabled="" type="checkbox"/>
-A <code>background</code> variable (the scaled loaded image)</li>
-<li><input disabled="" type="checkbox"/>
-A <code>screen.blit(variable, coordinate)</code> line inside your <code>while running:</code> loop</li>
-<li><input disabled="" type="checkbox"/>
-A background showing up instead of a black screen!</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-24-add-a-game-title-and-app-icon"><a class="header" href="#task-24-add-a-game-title-and-app-icon">Task 2.4: Add a Game Title and App Icon</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
+    <ul>  
+        <li>A <pre style="display: inline;">background_image</pre> variable (path to the image)</li>
+        <li>A <pre style="display: inline;">background</pre> variable (the scaled loaded image)</li>
+        <li>A <pre style="display: inline;">screen.blit(variable, coordinate)</pre> line inside your <pre style="display: inline;">while running:</pre> loop</li>
+        <li>A background showing up instead of a black screen!</li>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-24-add-a-game-title-and-app-icon"><a class="header" href="#task-24-add-a-game-title-and-app-icon">Task 2.4: Add a Game Title and App Icon</a></h1>
 <ol>
 <li>Change the text that appears at the very top of your game window use a Pygame function <code>pygame.display.set_caption()</code>.</li>
 <li><strong>load an image</strong> using <code>pygame.image.load(...)</code></li>
 <li>use Pygame function <code>pygame.display.set_icon()</code> to set the image.</li>
 <li>The path to your icon should be something like this: &quot;images/game_icon.png&quot;</li>
 </ol>
-<hr />
-<h1 id="checkpoints-1"><a class="header" href="#checkpoints-1">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<p>Have your customised game title</p>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>Have your customised icon</p>
-</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-3-making-a-player"><a class="header" href="#task-3-making-a-player">Task 3: Making a player</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
+    <ul>  
+        <li>Have your customised game title</li>
+        <li>Have your customised icon</li>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-3-making-a-player"><a class="header" href="#task-3-making-a-player">Task 3: Making a player</a></h1>
 <p><strong>Goal:</strong> Make a player that can move and be seen on the screen.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-31-create-a-player-class"><a class="header" href="#task-31-create-a-player-class">Task 3.1: Create a Player Class</a></h1>
 <ol>
@@ -358,7 +354,7 @@ A background showing up instead of a black screen!</li>
     </ul>
 </div>
 <hr />
-<h1 id="checkpoints-2"><a class="header" href="#checkpoints-2">Checkpoints</a></h1>
+<h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
@@ -399,7 +395,7 @@ A background showing up instead of a black screen!</li>
         <li>Print the player's <code>size</code>.</li>
     </ul>
 </div>
-<h1 id="checkpoints-3"><a class="header" href="#checkpoints-3">Checkpoints</a></h1>
+<h1 id="checkpoints-1"><a class="header" href="#checkpoints-1">Checkpoints</a></h1>
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
@@ -431,7 +427,7 @@ A background showing up instead of a black screen!</li>
         <li>The position to draw at is <code>(position_x, position_y)</code>.</li>
     </ul>
 </div>
-<h1 id="checkpoints-4"><a class="header" href="#checkpoints-4">Checkpoints</a></h1>
+<h1 id="checkpoints-2"><a class="header" href="#checkpoints-2">Checkpoints</a></h1>
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
@@ -491,7 +487,7 @@ A background showing up instead of a black screen!</li>
         <li>When moving <strong>right</strong>, change the image to <code>poco_right.png</code>.</li>
     </ul>
 </div>
-<h1 id="checkpoints-5"><a class="header" href="#checkpoints-5">Checkpoints</a></h1>
+<h1 id="checkpoints-3"><a class="header" href="#checkpoints-3">Checkpoints</a></h1>
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
@@ -505,7 +501,7 @@ A background showing up instead of a black screen!</li>
 <ol>
 <li>Inside your <code>while running:</code> game loop, <strong>at the very start</strong> of the loop (before drawing the player or foods), draw the background again over the whole screen.</li>
 </ol>
-<h3 id="hint-1"><a class="header" href="#hint-1">Hint:</a></h3>
+<h3 id="hint"><a class="header" href="#hint">Hint:</a></h3>
 <br>
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>💡 Hint</b></p>
@@ -513,7 +509,7 @@ A background showing up instead of a black screen!</li>
         <li>Use <code>screen.blit(,)</code>.</li>
     </ul>
 </div>
-<h1 id="checkpoints-6"><a class="header" href="#checkpoints-6">Checkpoints</a></h1>
+<h1 id="checkpoints-4"><a class="header" href="#checkpoints-4">Checkpoints</a></h1>
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
@@ -555,7 +551,7 @@ A background showing up instead of a black screen!</li>
 <li>Save the final scaled image into the object (e.g., <code>self.sprite</code>).</li>
 </ol>
 <hr />
-<h1 id="checkpoints-7"><a class="header" href="#checkpoints-7">Checkpoints</a></h1>
+<h1 id="checkpoints-5"><a class="header" href="#checkpoints-5">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 <p>A <code>Food</code> class (or a class of things you want to have)</p>
@@ -575,7 +571,7 @@ A background showing up instead of a black screen!</li>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-42-create-a-food-dictionary"><a class="header" href="#task-42-create-a-food-dictionary">Task 4.2: Create a Food Dictionary</a></h1>
 <ol>
 <li>Create a dictionary called <code>foods</code>, this dictionary will hold all the food items you want to appear in your game.
-<h3 id="hint-2"><a class="header" href="#hint-2">Hint:</a></h3>
+<h3 id="hint-1"><a class="header" href="#hint-1">Hint:</a></h3>
 <ul>
 <li>Use curly braces <code>{}</code> to create a dictionary.</li>
 <li>Save it in your main code <strong>before</strong> your game loop starts.</li>
@@ -602,7 +598,7 @@ A background showing up instead of a black screen!</li>
 <li>Create a new empty list called <code>active_foods</code>, this list will store all the Food objects you create.</li>
 <li>Write a <code>for</code> loop that goes through every item in your <code>foods</code> dictionary. In each loop, you will create a new Food object.</li>
 </ol>
-<h3 id="hint-3"><a class="header" href="#hint-3">Hint:</a></h3>
+<h3 id="hint-2"><a class="header" href="#hint-2">Hint:</a></h3>
 <ul>
 <li>Use <code>.items()</code> to loop through both the <strong>key</strong> and <strong>value</strong>.</li>
 <li>The key will be the <strong>name</strong> of the food.</li>
@@ -614,7 +610,7 @@ A background showing up instead of a black screen!</li>
 </ul>
 <ol start="3">
 <li>Create a New Food Object for Each Item
-<h3 id="hint-4"><a class="header" href="#hint-4">Hint:</a></h3>
+<h3 id="hint-3"><a class="header" href="#hint-3">Hint:</a></h3>
 <ul>
 <li><code>key</code> -&gt; name</li>
 <li><code>value[0]</code> -&gt; image path</li>
@@ -624,7 +620,7 @@ A background showing up instead of a black screen!</li>
 </li>
 </ol>
 <hr />
-<h1 id="checkpoints-8"><a class="header" href="#checkpoints-8">Checkpoints</a></h1>
+<h1 id="checkpoints-6"><a class="header" href="#checkpoints-6">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 An empty <code>active_foods</code> list created</li>
@@ -641,7 +637,7 @@ A loop that:
 <ol>
 <li>Create a new method called <code>draw</code>.</li>
 </ol>
-<h3 id="hint-5"><a class="header" href="#hint-5">Hint:</a></h3>
+<h3 id="hint-4"><a class="header" href="#hint-4">Hint:</a></h3>
 <ul>
 <li>Use the <code>def</code> keyword.</li>
 <li>It should be written <strong>inside</strong> your Food class (at the same indentation level as <code>__init__()</code>).</li>
@@ -652,14 +648,14 @@ A loop that:
 <ol start="2">
 <li>Draw the Sprite Onto the Screen</li>
 </ol>
-<h3 id="hint-6"><a class="header" href="#hint-6">Hint</a></h3>
+<h3 id="hint-5"><a class="header" href="#hint-5">Hint</a></h3>
 <ul>
 <li>Use <code>screen.blit(...)</code> to draw.</li>
 <li>The first thing you want to draw is the <strong>sprite</strong> (image).</li>
 <li>The position to draw at is <code>(position_x, position_y)</code>.</li>
 </ul>
 <hr />
-<h1 id="checkpoints-9"><a class="header" href="#checkpoints-9">Checkpoints</a></h1>
+<h1 id="checkpoints-7"><a class="header" href="#checkpoints-7">Checkpoints</a></h1>
 <ul>
 <li><input disabled="" type="checkbox"/>
 A <code>draw()</code> method inside your Food class which knows how to:
@@ -705,7 +701,7 @@ A <code>draw()</code> method inside your Food class which knows how to:
 <li>Create a <strong>method</strong> called <code>update(self)</code> in the player class. Copy the property you just wrote into this method.</li>
 <li>Call the player update method in the main game loop, just underneath <code>player.draw()</code></li>
 </ol>
-<h3 id="hint-7"><a class="header" href="#hint-7">Hint</a></h3>
+<h3 id="hint-6"><a class="header" href="#hint-6">Hint</a></h3>
 <pre><code class="language-python"># sprite.get_rect() creates a rectangle the size of the image
 # .move() moves whatever it's attached to to an x and y coordinate
 self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)
@@ -716,7 +712,7 @@ self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)
 <li>Use the colliderect to check whether the rectangular hitboxes are colliding </li>
 <li>If they are colliding, remove food from the active_foods list</li>
 </ol>
-<h3 id="hint-8"><a class="header" href="#hint-8">Hint</a></h3>
+<h3 id="hint-7"><a class="header" href="#hint-7">Hint</a></h3>
 <pre><code class="language-python"># Collision is True is the hitboxes are colliding and False if not
 collision = self.hitbox.colliderect(food.hitbox) 
 </code></pre>
