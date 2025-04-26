@@ -176,8 +176,45 @@
                     <main>
                         <h1 id="task-1-set-up"><a class="header" href="#task-1-set-up">Task 1: Set Up</a></h1>
 <p><strong>Goal:</strong> Create a file and initialise pygame.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="make-a-python-file"><a class="header" href="#make-a-python-file">Make a Python File</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="import-pygame"><a class="header" href="#import-pygame">Import Pygame</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="task-11-make-python-file"><a class="header" href="#task-11-make-python-file">Task 1.1: Make Python File</a></h1>
+<p>Now that you have VS Code open, it’s time to create your Python file!</p>
+<p>In VS Code, click on <strong>File</strong></p>
+<pre><code>![File](../images/create_files/1.png)
+</code></pre>
+<p>and then New File...
+<img src="1_set_up/../images/create_files/2.png" alt="New File" /></p>
+<p>You should see something like this pop up after you cilck 'New File'
+<img src="1_set_up/../images/create_files/3.png" alt="Pop Up" /></p>
+<p>Enter the name of your file (e.g. 'my_game.py')
+<img src="1_set_up/../images/create_files/5.png" alt="my_game.py" />
+<span style="font-size: 24px;"><code>NOTE:   It’s super important to include **`.py`** at the end of the file name so VS Code knows it's Python code!</code></span></p>
+<p>Press <strong>'ENTER'</strong> and something looks like this should pop up
+<img src="1_set_up/../images/create_files/8.png" alt="my_game.py" /></p>
+<p>Press <strong>'Desktop'</strong> and then <strong>'Create File'</strong> to save your file to the Desktop
+<img src="1_set_up/../images/create_files/6.png" alt="my_game.py" /></p>
+<p><img src="1_set_up/../images/create_files/7.png" alt="my_game.py" /></p>
+<p><strong>AND NOW YOU HAVE CREATED YOUR PYTHON FILE!!! YOU CAN START CODING</strong>
+<img src="1_set_up/../images/create_files/9.png" alt="my_game.py" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="task-12-import-pygame"><a class="header" href="#task-12-import-pygame">Task 1.2: Import Pygame</a></h1>
+<p>Now that you have created your Python file, it's time to start setting it up for Pygame!</p>
+<h2 id="step-1-import-the-pygame-module"><a class="header" href="#step-1-import-the-pygame-module">Step 1: Import the Pygame Module</a></h2>
+<p>At the very top of your Python file, you need to <strong>import</strong> the Pygame library.</p>
+<p>Type this line at the very top of your file:</p>
+<pre><code class="language-python">import pygame
+</code></pre>
+<p>This command loads the Pygame tools into your file, so you can use them for your game!</p>
+<p>You should now see something like this:</p>
+<img src="1_set_up/../images/import_pygame/1.png" width="2000">
+<hr />
+<h2 id="step-2-initialise-pygame"><a class="header" href="#step-2-initialise-pygame">Step 2: Initialise Pygame</a></h2>
+<p>Before we can use any Pygame features (like drawing things and moving characters), we need to <strong>initialise</strong> it.</p>
+<p><strong>Initialising</strong> Pygame gets everything ready behind the scenes.</p>
+<p>Right underneath your <code>import pygame</code> line, type:</p>
+<pre><code class="language-python">pygame.init()
+</code></pre>
+<p><code>pygame.init()</code> starts up all the Pygame systems like sound, graphics, timing, etc.</p>
+<p>You should now see something like this:</p>
+<p><img src="1_set_up/../images/import_pygame/2.png" alt="Pygame Init" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-2-creating-a-game-screen"><a class="header" href="#task-2-creating-a-game-screen">Task 2: Creating a game screen</a></h1>
 <p><strong>Goal:</strong> Create a visible game screen with a background, title, icon and a game loop.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-11-create-game-screen"><a class="header" href="#task-11-create-game-screen">Task 1.1: Create Game Screen</a></h1>
@@ -433,8 +470,66 @@ A loop that:
 </ul>
 </li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="create-food-draw-method"><a class="header" href="#create-food-draw-method">Create Food Draw Method</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="draw-active-foods-in-game-loop"><a class="header" href="#draw-active-foods-in-game-loop">Draw Active Foods in Game Loop</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="task-44-create-food-draw-method"><a class="header" href="#task-44-create-food-draw-method">Task 4.4: Create Food Draw Method</a></h1>
+<ol>
+<li>Create a new method called <code>draw</code>.</li>
+</ol>
+<h3 id="hint-4"><a class="header" href="#hint-4">Hint:</a></h3>
+<ul>
+<li>Use the <code>def</code> keyword.</li>
+<li>It should be written <strong>inside</strong> your Food class (at the same indentation level as <code>__init__()</code>).</li>
+<li>This method <strong>won’t take any arguments</strong> (only <code>self</code>).</li>
+<li>This method will <strong>draw the food</strong> onto the screen.</li>
+</ul>
+<hr />
+<ol start="2">
+<li>Draw the Sprite Onto the Screen</li>
+</ol>
+<h3 id="hint-5"><a class="header" href="#hint-5">Hint</a></h3>
+<ul>
+<li>Use <code>screen.blit(...)</code> to draw.</li>
+<li>The first thing you want to draw is the <strong>sprite</strong> (image).</li>
+<li>The position to draw at is <code>(position_x, position_y)</code>.</li>
+</ul>
+<hr />
+<h1 id="checkpoints-5"><a class="header" href="#checkpoints-5">Checkpoints</a></h1>
+<ul>
+<li><input disabled="" type="checkbox"/>
+A <code>draw()</code> method inside your Food class which knows how to:
+<ul>
+<li>Draw the sprite</li>
+<li>And place it at the correct position</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="task-45-draw-active-foods-in-game-loop"><a class="header" href="#task-45-draw-active-foods-in-game-loop">Task 4.5: Draw Active Foods in Game Loop</a></h1>
+<p>Now that each Food knows how to draw itself, it's time to actually <strong>draw all the food</strong> onto your game window during the game!</p>
+<ul>
+<li>You will <strong>loop through all active foods</strong> inside your <code>while running:</code> game loop.</li>
+</ul>
+<h2 id="step-1-loop-over-active_foods"><a class="header" href="#step-1-loop-over-active_foods">Step 1: Loop Over <code>active_foods</code></a></h2>
+<ul>
+<li>Create a <code>for</code> loop inside your <code>while running:</code> loop which loop over the <code>active_foods</code> list.</li>
+<li>In each loop call the <code>draw()</code> method on the food to draw it on screen.</li>
+</ul>
+<hr />
+<h2 id="step-2-drawing-and-interaction"><a class="header" href="#step-2-drawing-and-interaction">Step 2: Drawing and Interaction</a></h2>
+<ul>
+<li>Inside the <code>for</code> loop:
+<ul>
+<li>use player's method to check for interaction with the food.</li>
+<li>call the food’s <code>.draw()</code> method.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="checklist"><a class="header" href="#checklist">Checklist</a></h1>
+<ul>
+<li>A <code>for</code> loop inside the main game loop</li>
+<li>You can interact with the food</li>
+<li>Draw the food onto the screen</li>
+<li>All your food are visible</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-5-collision"><a class="header" href="#task-5-collision">Task 5: Collision</a></h1>
 <p><strong>Goal:</strong> Detect whether the player is colliding with any of the food.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-51-create-a-hitbox-for-both-the-players-and-the-foods"><a class="header" href="#task-51-create-a-hitbox-for-both-the-players-and-the-foods">Task 5.1: Create a hitbox for both the players and the foods</a></h1>
