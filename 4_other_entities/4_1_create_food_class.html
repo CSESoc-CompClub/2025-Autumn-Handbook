@@ -175,54 +175,51 @@
                     <main>
                         <h1 id="task-41-create-a-food-class"><a class="header" href="#task-41-create-a-food-class">Task 4.1: Create a Food Class</a></h1>
 <ol>
-<li>
-<p>Start by creating a new class called <code>Food</code>.</p>
-<h3 id="example"><a class="header" href="#example">Example:</a></h3>
-<pre><code class="language-python">    class Food:
-</code></pre>
-</li>
-<li>
-<p>Inside your <code>Food</code> class, create a special function called <code>__init__</code>.</p>
-</li>
+<li>Start by creating a new class called <code>Food</code>.
+Eg:</li>
 </ol>
-<h3 id="hints"><a class="header" href="#hints">Hints:</a></h3>
-<ul>
-<li>Use the <code>def</code> keyword to define the method.</li>
-<li>The <code>__init__</code> method should accept <strong>4 inputs</strong>:
-<ul>
-<li><code>name</code></li>
-<li><code>image</code></li>
-<li><code>position_x</code></li>
-<li><code>position_y</code></li>
-</ul>
-</li>
-<li>Save each of these inputs into the object using <code>self.</code></li>
-</ul>
+<pre><code class="language-python">class Food:
+</code></pre>
+<ol start="2">
+<li>Inside your <code>Food</code> class, create a special function called <code>__init__</code>.
+<br></li>
+</ol>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use the <code>def</code> keyword to define the method.</li>
+        <li>The <code>__init__</code> method should accept <strong>4 inputs</strong>:</li>
+        <ul>
+            <li><code>name</code></li>
+            <li><code>image</code></li>
+            <li><code>position_x</code></li>
+            <li><code>position_y</code></li>
+        </ul>
+        <li>Save each of these inputs into the object using <code>self.</code></li>
+    </ul>
+</div>
 <ol start="3">
 <li>Inside your <code>__init__()</code> method, set a default <strong>size</strong> for your food.</li>
-<li>Still inside the <code>__init__()</code> method, load the image file using Pygame's <code>image load</code> function.</li>
+<li>Still inside the <code>__init__()</code> method, load the image file using Pygame's <code>image.load</code> function.</li>
 <li>Scale the loaded image to the correct size using Pygame's <code>transform scale</code> function.</li>
 <li>Save the final scaled image into the object (e.g., <code>self.sprite</code>).</li>
 </ol>
 <hr />
 <h1 id="checkpoints"><a class="header" href="#checkpoints">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<p>A <code>Food</code> class (or a class of things you want to have)</p>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>An <code>__init__()</code> method that:</p>
-<ul>
-<li>Saves the name, image, and position</li>
-<li>Sets a default size</li>
-<li>Loads and scales the sprite</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>A ready-to-use object for your game!</p>
-</li>
-</ul>
-
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>Food</code> class (or a class of things you want to have).</li>
+        <li>An <code>__init__()</code> method that:</li>
+        <ul>
+            <li>Saves the name, image, and position.</li>
+            <li>Sets a default size.</li>
+            <li>Loads and scales the sprite.</li>
+        </ul>
+        <li>A ready-to-use object for your game!</li>
+    </ul>
+</div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">

@@ -521,179 +521,202 @@
 <p><strong>Goal:</strong> Add multiple entities that are related to each other. In this example we have added food, but you are free to add what you wish, as long as it is appropriate. </p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-41-create-a-food-class"><a class="header" href="#task-41-create-a-food-class">Task 4.1: Create a Food Class</a></h1>
 <ol>
-<li>
-<p>Start by creating a new class called <code>Food</code>.</p>
-<h3 id="example"><a class="header" href="#example">Example:</a></h3>
-<pre><code class="language-python">    class Food:
-</code></pre>
-</li>
-<li>
-<p>Inside your <code>Food</code> class, create a special function called <code>__init__</code>.</p>
-</li>
+<li>Start by creating a new class called <code>Food</code>.
+Eg:</li>
 </ol>
-<h3 id="hints"><a class="header" href="#hints">Hints:</a></h3>
-<ul>
-<li>Use the <code>def</code> keyword to define the method.</li>
-<li>The <code>__init__</code> method should accept <strong>4 inputs</strong>:
-<ul>
-<li><code>name</code></li>
-<li><code>image</code></li>
-<li><code>position_x</code></li>
-<li><code>position_y</code></li>
-</ul>
-</li>
-<li>Save each of these inputs into the object using <code>self.</code></li>
-</ul>
+<pre><code class="language-python">class Food:
+</code></pre>
+<ol start="2">
+<li>Inside your <code>Food</code> class, create a special function called <code>__init__</code>.
+<br></li>
+</ol>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use the <code>def</code> keyword to define the method.</li>
+        <li>The <code>__init__</code> method should accept <strong>4 inputs</strong>:</li>
+        <ul>
+            <li><code>name</code></li>
+            <li><code>image</code></li>
+            <li><code>position_x</code></li>
+            <li><code>position_y</code></li>
+        </ul>
+        <li>Save each of these inputs into the object using <code>self.</code></li>
+    </ul>
+</div>
 <ol start="3">
 <li>Inside your <code>__init__()</code> method, set a default <strong>size</strong> for your food.</li>
-<li>Still inside the <code>__init__()</code> method, load the image file using Pygame's <code>image load</code> function.</li>
+<li>Still inside the <code>__init__()</code> method, load the image file using Pygame's <code>image.load</code> function.</li>
 <li>Scale the loaded image to the correct size using Pygame's <code>transform scale</code> function.</li>
 <li>Save the final scaled image into the object (e.g., <code>self.sprite</code>).</li>
 </ol>
 <hr />
 <h1 id="checkpoints-5"><a class="header" href="#checkpoints-5">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-<p>A <code>Food</code> class (or a class of things you want to have)</p>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>An <code>__init__()</code> method that:</p>
-<ul>
-<li>Saves the name, image, and position</li>
-<li>Sets a default size</li>
-<li>Loads and scales the sprite</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"/>
-<p>A ready-to-use object for your game!</p>
-</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-42-create-a-food-dictionary"><a class="header" href="#task-42-create-a-food-dictionary">Task 4.2: Create a Food Dictionary</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>Food</code> class (or a class of things you want to have).</li>
+        <li>An <code>__init__()</code> method that:</li>
+        <ul>
+            <li>Saves the name, image, and position.</li>
+            <li>Sets a default size.</li>
+            <li>Loads and scales the sprite.</li>
+        </ul>
+        <li>A ready-to-use object for your game!</li>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-42-create-a-food-dictionary"><a class="header" href="#task-42-create-a-food-dictionary">Task 4.2: Create a Food Dictionary</a></h1>
 <ol>
 <li>Create a dictionary called <code>foods</code>, this dictionary will hold all the food items you want to appear in your game.
-<h3 id="hint-1"><a class="header" href="#hint-1">Hint:</a></h3>
-<ul>
-<li>Use curly braces <code>{}</code> to create a dictionary.</li>
-<li>Save it in your main code <strong>before</strong> your game loop starts.</li>
-</ul>
-</li>
-<li>Inside your dictionary, add entries for each food you want
-<ul>
-<li>Each <strong>key</strong> should be the name of the food (like <code>&quot;banana&quot;</code>, <code>&quot;grapes&quot;</code>, etc.).</li>
-<li>Each <strong>value</strong> should be a <strong>list</strong> that contains:
-<ul>
-<li>The <strong>path</strong> to the image file</li>
-<li>The <strong>x</strong> position</li>
-<li>The <strong>y</strong> position</li>
-</ul>
-</li>
-</ul>
-<h3 id="hint-for-structure"><a class="header" href="#hint-for-structure">Hint for structure:</a></h3>
+<br></li>
+</ol>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use curly braces <code>{}</code> to create a dictionary.</li>
+        <li>Save it in your main code <strong>before</strong> your game loop starts.</li>
+    </ul>
+</div>
+<br>
+2. Inside your dictionary, add entries for each food you want
+<br>
+    <br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Each <strong>key</strong> should be the name of the food (like <code>"banana"</code>, <code>"grapes"</code>, etc.).</li>
+        <li>Each <strong>value</strong> should be a <strong>list</strong> that contains:</li>
+        <ul>
+            <li>The <strong>path</strong> to the image file.</li>
+            <li>The <strong>x</strong> position.</li>
+            <li>The <strong>y</strong> position.</li>
+        </ul>
+    </ul>
+</div>
+<h3 id="example-structure"><a class="header" href="#example-structure">Example structure:</a></h3>
 <pre><code class="language-python">&quot;food name&quot;: [&quot;path/to/image.png&quot;, x_position, y_position]
 </code></pre>
-</li>
-</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-43-initialise-active-foods-list"><a class="header" href="#task-43-initialise-active-foods-list">Task 4.3: Initialise Active Foods List</a></h1>
 <ol>
-<li>Create a new empty list called <code>active_foods</code>, this list will store all the Food objects you create.</li>
+<li>Create a new empty list called <code>active_foods</code>, and this list will store all the Food objects you create.</li>
 <li>Write a <code>for</code> loop that goes through every item in your <code>foods</code> dictionary. In each loop, you will create a new Food object.</li>
 </ol>
-<h3 id="hint-2"><a class="header" href="#hint-2">Hint:</a></h3>
-<ul>
-<li>Use <code>.items()</code> to loop through both the <strong>key</strong> and <strong>value</strong>.</li>
-<li>The key will be the <strong>name</strong> of the food.</li>
-<li>The value will be a list containing:
-<ul>
-<li><code>[image path, x position, y position]</code></li>
-</ul>
-</li>
-</ul>
-<ol start="3">
-<li>Create a New Food Object for Each Item
-<h3 id="hint-3"><a class="header" href="#hint-3">Hint:</a></h3>
-<ul>
-<li><code>key</code> -&gt; name</li>
-<li><code>value[0]</code> -&gt; image path</li>
-<li><code>value[1]</code> -&gt; x position</li>
-<li><code>value[2]</code> -&gt; y position</li>
-</ul>
-</li>
-</ol>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use <code>.items()</code> to loop through both the <strong>key</strong> and <strong>value</strong>.</li>
+        <li>The <strong>key</strong> will be the <strong>name</strong> of the food.</li>
+        <li>The <strong>value</strong> will be a list containing:</li>
+        <ul>
+            <li><code>[image path, x position, y position]</code></li>
+        </ul>
+    </ul>
+</div>
+<br>
+3. Create a New Food Object for Each Item
+<br>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li><code>key</code> -> name</li>
+        <li><code>value[0]</code> -> image path</li>
+        <li><code>value[1]</code> -> x position</li>
+        <li><code>value[2]</code> -> y position</li>
+    </ul>
+</div>
 <hr />
-<h1 id="checkpoints-6"><a class="header" href="#checkpoints-6">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-An empty <code>active_foods</code> list created</li>
-<li><input disabled="" type="checkbox"/>
-A loop that:
-<ul>
-<li>Goes through every food in your dictionary</li>
-<li>Creates a Food object</li>
-<li>Adds it into the active_foods list</li>
-</ul>
-</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-44-create-food-draw-method"><a class="header" href="#task-44-create-food-draw-method">Task 4.4: Create Food Draw Method</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>An empty <code>active_foods</code> list is created.</li>
+        <li>A loop that:</li>
+        <ul>
+            <li>Goes through every food in your dictionary.</li>
+            <li>Creates a Food object.</li>
+            <li>Adds it into the <code>active_foods</code> list.</li>
+        </ul>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-44-create-food-draw-method"><a class="header" href="#task-44-create-food-draw-method">Task 4.4: Create Food Draw Method</a></h1>
 <ol>
 <li>Create a new method called <code>draw</code>.</li>
 </ol>
-<h3 id="hint-4"><a class="header" href="#hint-4">Hint:</a></h3>
-<ul>
-<li>Use the <code>def</code> keyword.</li>
-<li>It should be written <strong>inside</strong> your Food class (at the same indentation level as <code>__init__()</code>).</li>
-<li>This method <strong>won’t take any arguments</strong> (only <code>self</code>).</li>
-<li>This method will <strong>draw the food</strong> onto the screen.</li>
-</ul>
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use the <code>def</code> keyword.</li>
+        <li>It should be written <strong>inside</strong> your Food class (at the same indentation level as <code>__init__()</code>).</li>
+        <li>This method <strong>won’t take any arguments</strong> (only <code>self</code>).</li>
+        <li>This method will <strong>draw the food</strong> onto the screen.</li>
+    </ul>
+</div>  
 <hr />
 <ol start="2">
-<li>Draw the Sprite Onto the Screen</li>
+<li>Draw the Sprite Onto the Screen
+<br></li>
 </ol>
-<h3 id="hint-5"><a class="header" href="#hint-5">Hint</a></h3>
-<ul>
-<li>Use <code>screen.blit(...)</code> to draw.</li>
-<li>The first thing you want to draw is the <strong>sprite</strong> (image).</li>
-<li>The position to draw at is <code>(position_x, position_y)</code>.</li>
-</ul>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use <code>screen.blit(...)</code> to draw.</li>
+        <li>The first thing you want to draw is the <strong>sprite</strong> (image).</li>
+        <li>The position to draw at is <code>(position_x, position_y)</code>.</li>
+    </ul>
+</div>
 <hr />
-<h1 id="checkpoints-7"><a class="header" href="#checkpoints-7">Checkpoints</a></h1>
-<ul>
-<li><input disabled="" type="checkbox"/>
-A <code>draw()</code> method inside your Food class which knows how to:
-<ul>
-<li>Draw the sprite</li>
-<li>And place it at the correct position</li>
-</ul>
-</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-45-draw-active-foods-in-game-loop"><a class="header" href="#task-45-draw-active-foods-in-game-loop">Task 4.5: Draw Active Foods in Game Loop</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>draw()</code> method inside your Food class which knows how to:</li>
+        <ul>
+            <li>Draw the sprite.</li>
+            <li>Place it at the correct position.</li>
+        </ul>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-45-draw-active-foods-in-game-loop"><a class="header" href="#task-45-draw-active-foods-in-game-loop">Task 4.5: Draw Active Foods in Game Loop</a></h1>
 <p>Now that each Food knows how to draw itself, it's time to actually <strong>draw all the food</strong> onto your game window during the game!</p>
 <ul>
 <li>You will <strong>loop through all active foods</strong> inside your <code>while running:</code> game loop.</li>
 </ul>
 <h2 id="step-1-loop-over-active_foods"><a class="header" href="#step-1-loop-over-active_foods">Step 1: Loop Over <code>active_foods</code></a></h2>
-<ul>
-<li>Create a <code>for</code> loop inside your <code>while running:</code> loop which loop over the <code>active_foods</code> list.</li>
-<li>In each loop call the <code>draw()</code> method on the food to draw it on screen.</li>
-</ul>
+<p>Draw each active food item onto the screen.
+<br></p>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Create a loop inside your <code>while running:</code> loop to iterate over the <code>active_foods</code> list.</li>
+        <li>Call the food’s <code>draw()</code> method.</li>
+    </ul>
+</div>
 <hr />
 <h2 id="step-2-drawing-and-interaction"><a class="header" href="#step-2-drawing-and-interaction">Step 2: Drawing and Interaction</a></h2>
-<ul>
-<li>Inside the <code>for</code> loop:
-<ul>
-<li>use player's method to check for interaction with the food.</li>
-<li>call the food’s <code>.draw()</code> method.</li>
-</ul>
-</li>
-</ul>
+<p>Check whether the player has interacted with the food. 
+<br></p>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Inside the <code>for</code> loop:</li>
+        <ul>
+            <li>Use the player's method to check for interaction with the food.</li>
+        </ul>
+    </ul>
+</div>
 <hr />
 <h1 id="checklist"><a class="header" href="#checklist">Checklist</a></h1>
-<ul>
-<li>A <code>for</code> loop inside the main game loop</li>
-<li>You can interact with the food</li>
-<li>Draw the food onto the screen</li>
-<li>All your food are visible</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="task-5-collision"><a class="header" href="#task-5-collision">Task 5: Collision</a></h1>
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>for</code> loop inside the main game loop.</li>
+        <li>You can interact with the food.</li>
+        <li>All food is drawn onto the screen.</li>
+        <li>All your food is visible.</li>
+    </ul>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="task-5-collision"><a class="header" href="#task-5-collision">Task 5: Collision</a></h1>
 <p><strong>Goal:</strong> Detect whether the player is colliding with any of the food.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-51-create-a-hitbox-for-both-the-players-and-the-foods"><a class="header" href="#task-51-create-a-hitbox-for-both-the-players-and-the-foods">Task 5.1: Create a hitbox for both the players and the foods</a></h1>
 <ol>
@@ -736,14 +759,14 @@ features of your game.</p>
 <ol>
 <li>If the the player picks up all the items or the score is equal to the number of items, then end the game and quit.</li>
 </ol>
-<h3 id="hints-1"><a class="header" href="#hints-1">Hints</a></h3>
+<h3 id="hints"><a class="header" href="#hints">Hints</a></h3>
 <p>Perhaps setting <code>running = False</code> will do something.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-63-show-the-score-on-the-screen"><a class="header" href="#task-63-show-the-score-on-the-screen">Task 6.3: Show the score on the screen</a></h1>
 <ol>
 <li>Render the score on the screen. We can use <code>font.render()</code>.</li>
 <li><code>blit</code> the text onto the screen. Experiment with where you would put the score!</li>
 </ol>
-<h3 id="hints-2"><a class="header" href="#hints-2">Hints</a></h3>
+<h3 id="hints-1"><a class="header" href="#hints-1">Hints</a></h3>
 <pre><code class="language-python"># Setting fonts in pygame
 colour = (256, 256, 256) # (R,G,B)
 
