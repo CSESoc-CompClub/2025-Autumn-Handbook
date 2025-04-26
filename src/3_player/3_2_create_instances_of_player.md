@@ -1,11 +1,18 @@
 # Task 3.2: Create an instance of player
 
-Your task is to create an instance of the player class. 
+1. Outside of your class definition (in your main code), create a new player object!
 
-`
-Hint: something = ClassName()
-`
+    ### Hint:
+    - Use the class name with brackets `()` to create a new object.
+    - Save it into a variable called `player`.
 
-Doing so will call the `__init__(self, ...)` method of the class.
+2.  After you create the player instance, print out the player’s important properties to check they were created correctly.
+    ### Hints:
+        - Print the player's `sprite`
+        - Print the player's `position_x`
+        - Print the player's `position_y`
+        - Print the player's `size`
 
-Now, thinking back to yesterday, how might we access the variables of this class? 
+# Checkpoints
+- [ ] A player object stored in a variable called `player`
+- [ ] Printouts in terminal
