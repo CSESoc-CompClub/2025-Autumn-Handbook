@@ -1,9 +1,15 @@
 # Task 3.4: Create the move method
 
 1. Inside your `Player` class, define a new method called `move()`.
-    ### Hints:
-        - Use the `def` keyword.
-        - Remember to give it just one parameter: `self`.
+
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Use the <code>def</code> keyword.</li>
+        <li>Remember to give it just one parameter: <code>self</code>.</li>
+    </ul>
+</div>
 
 2. Use `pygame.key.get_pressed()` to check which keys are currently being held down and save the result into a variable
 
@@ -15,26 +21,38 @@
     | `S` key | Move **down** |
     | `D` key | Move **right** |
 
-    ### Hints:
-    - If the `W` key is pressed, **decrease** the y position.
-    - If the `S` key is pressed, **increase** the y position.
-    - If the `A` key is pressed, **decrease** the x position.
-    - If the `D` key is pressed, **increase** the x position.
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>If the <code>W</code> key is pressed, <strong>decrease</strong> the y position.</li>
+        <li>If the <code>S</code> key is pressed, <strong>increase</strong> the y position.</li>
+        <li>If the <code>A</code> key is pressed, <strong>decrease</strong> the x position.</li>
+        <li>If the <code>D</code> key is pressed, <strong>increase</strong> the x position.</li>
+    </ul>
+</div>
 
 4. change the player's image depending on the direction they are moving
 
-    ### Hints:
-        - When moving **up**, change the image to "poco_up.png"
-        - When moving **down**, change the image to "poco_down.png"
-        - When moving **left**, change the image to "poco_left.png"
-        - When moving **right**, change the image to "poco_right.png"
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>When moving <strong>up</strong>, change the image to <code>poco_up.png</code>.</li>
+        <li>When moving <strong>down</strong>, change the image to <code>poco_down.png</code>.</li>
+        <li>When moving <strong>left</strong>, change the image to <code>poco_left.png</code>.</li>
+        <li>When moving <strong>right</strong>, change the image to <code>poco_right.png</code>.</li>
+    </ul>
+</div>
 
 # Checkpoints
-
-- [ ] A `move()` method inside your Player class
-
-- [ ] The method checks which keys are pressed
-
-- [ ]The method updates the player’s `position_x` and `position_y`
-
-- [ ] The player image changes when moving!
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>move()</code> method inside your <code>Player</code> class.</li>
+        <li>The method checks which keys are pressed.</li>
+        <li>The method updates the player’s <code>position_x</code> and <code>position_y</code>.</li>
+        <li>The player image changes when moving!</li>
+    </ul>
+</div>
