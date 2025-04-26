@@ -25,3 +25,8 @@
     - [Task 3.4: Initialise Active Foods List](new_game/Initialise_Active_Foods.md)
     - [Task 3.5: Create Food Draw Method](new_game/Food_Draw_Method.md)
     - [Task 3.6: Draw Active Foods in Game Loop](new_game/Draw_Active_Foods.md)
+
+    - [Task 5: Finishing the game.](finishing_game.md)
+        - [Task 5.1: Create a player score](finishing_game/5_1_player_score.md)
+        - [Task 5.2: Game Win condition](finishing_game/5_2_game_win.md)
+        - [Task 5.3: Show the score on the screen](finishing_game/5_3_display_score.md)
