@@ -545,7 +545,7 @@ A <code>draw()</code> method inside your Food class which knows how to:
 <li>Create a <strong>method</strong> called <code>update(self)</code> in the player class. Copy the property you just wrote into this method.</li>
 <li>Call the player update method in the main game loop, just underneath <code>player.draw()</code></li>
 </ol>
-<h3 id="relevant-code"><a class="header" href="#relevant-code">Relevant code</a></h3>
+<h3 id="hint-6"><a class="header" href="#hint-6">Hint</a></h3>
 <pre><code class="language-python"># sprite.get_rect() creates a rectangle the size of the image
 # .move() moves whatever it's attached to to an x and y coordinate
 self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)
@@ -556,7 +556,7 @@ self.hitbox = self.sprite.get_rect().move(self.position_x, self.position_y)
 <li>Use the colliderect to check whether the rectangular hitboxes are colliding </li>
 <li>If they are colliding, remove food from the active_foods list</li>
 </ol>
-<h3 id="relevant-code-1"><a class="header" href="#relevant-code-1">Relevant code</a></h3>
+<h3 id="hint-7"><a class="header" href="#hint-7">Hint</a></h3>
 <pre><code class="language-python"># Collision is True is the hitboxes are colliding and False if not
 collision = self.hitbox.colliderect(food.hitbox) 
 </code></pre>
@@ -564,20 +564,31 @@ collision = self.hitbox.colliderect(food.hitbox)
 <p><strong>Goal:</strong> Add a score, a win condition. Finishing this task finishes the basic
 features of your game.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-61-create-a-player-score"><a class="header" href="#task-61-create-a-player-score">Task 6.1: Create a player score</a></h1>
-<p>Create a player score variable that counts how many items that a player has picked up. Everytime that a user picks up a new item, update this variable. </p>
+<ol>
+<li>Create a player <strong>property</strong> called <code>score</code></li>
+<li>Everytime that a user picks up a new item, update this variable. </li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-62-game-win-condition"><a class="header" href="#task-62-game-win-condition">Task 6.2: Game Win condition</a></h1>
-<p>We need to have a way that the player can win the game. If the the player picks up all the items, (or the score is equal to the number of items), then end the game and quit.</p>
-<p>Perhaps setting <code>running = False</code> will do something...</p>
-<pre><code>if all items are collected:
-    end the game
-</code></pre>
+<ol>
+<li>If the the player picks up all the items or the score is equal to the number of items, then end the game and quit.</li>
+</ol>
+<h3 id="hints-1"><a class="header" href="#hints-1">Hints</a></h3>
+<p>Perhaps setting <code>running = False</code> will do something.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="task-63-show-the-score-on-the-screen"><a class="header" href="#task-63-show-the-score-on-the-screen">Task 6.3: Show the score on the screen</a></h1>
-<h2 id="step-1"><a class="header" href="#step-1">Step 1.</a></h2>
-<p>We need to render the score on the screen. Perhaps, we could do something like <a href="https://www.pygame.org/docs/ref/font.html#pygame.font.Font.render"><code>font.render()</code></a> might help us...</p>
-<h2 id="step-2"><a class="header" href="#step-2">Step 2.</a></h2>
-<p>We now need to <code>blit</code> the text onto the screen. You can think of it as the previous step drew us the image, and now we need to 'put' it on the screen. Where might we put this function?</p>
-<p>Use: </p>
-<pre><code>screen.blit(Surface, Coordinate)
+<ol>
+<li>Render the score on the screen. We can use <code>font.render()</code>.</li>
+<li><code>blit</code> the text onto the screen. Experiment with where you would put the score!</li>
+</ol>
+<h3 id="hints-2"><a class="header" href="#hints-2">Hints</a></h3>
+<pre><code class="language-python"># Setting fonts in pygame
+colour = (256, 256, 256) # (R,G,B)
+
+# Creating text - concatenate &quot;Score: &quot; and the score variable
+# https://www.pygame.org/docs/ref/font.html#pygame.font.Font.render
+font.render(&quot;Score: &quot; + score, True, colour)
+
+# Drawing on the screen
+screen.blit(image, (x_position, y_position))
 </code></pre>
 
                     </main>

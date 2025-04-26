@@ -174,12 +174,20 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="task-63-show-the-score-on-the-screen"><a class="header" href="#task-63-show-the-score-on-the-screen">Task 6.3: Show the score on the screen</a></h1>
-<h2 id="step-1"><a class="header" href="#step-1">Step 1.</a></h2>
-<p>We need to render the score on the screen. Perhaps, we could do something like <a href="https://www.pygame.org/docs/ref/font.html#pygame.font.Font.render"><code>font.render()</code></a> might help us...</p>
-<h2 id="step-2"><a class="header" href="#step-2">Step 2.</a></h2>
-<p>We now need to <code>blit</code> the text onto the screen. You can think of it as the previous step drew us the image, and now we need to 'put' it on the screen. Where might we put this function?</p>
-<p>Use: </p>
-<pre><code>screen.blit(Surface, Coordinate)
+<ol>
+<li>Render the score on the screen. We can use <code>font.render()</code>.</li>
+<li><code>blit</code> the text onto the screen. Experiment with where you would put the score!</li>
+</ol>
+<h3 id="hints"><a class="header" href="#hints">Hints</a></h3>
+<pre><code class="language-python"># Setting fonts in pygame
+colour = (256, 256, 256) # (R,G,B)
+
+# Creating text - concatenate &quot;Score: &quot; and the score variable
+# https://www.pygame.org/docs/ref/font.html#pygame.font.Font.render
+font.render(&quot;Score: &quot; + score, True, colour)
+
+# Drawing on the screen
+screen.blit(image, (x_position, y_position))
 </code></pre>
 
                     </main>
