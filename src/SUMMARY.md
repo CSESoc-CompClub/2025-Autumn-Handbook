@@ -12,6 +12,13 @@
         - [Task 1.3: Add Background Image](new_game/Background.md)
         - [Task 1.4: Add Icon and Game Title](new_game/Title_Icon.md)
 
+    - [Task 2: GAME BASICS](game_basics/game_basics.md)
+        - [Task 2.1: Create a player class](game_basics/2_1_create_player_class.md)
+        - [Task 2.2: Create an instance of player](game_basics/2_2_create_instances_of_player.md)
+        - [Task 2.3: Create the draw method](game_basics/2_3_create_draw_method.md)
+        - [Task 2.4: Create the move method](game_basics/2_4_create_move_method.md)
+        - [Task 2.5: Fix duplicating Poco](game_basics/2_5_fix_duplicating_poco.md)
+
     - [Task 3: OTHER ASSETS](new_game/Other_Assets.md)
     - [Task 3.1: Create a Food Class](new_game/Create_Food_Class.md)
     - [Task 3.2: Create a Food Dictionary](new_game/Create_Food_Dictionary.md)
