@@ -4,7 +4,7 @@
 2. Create a **method** called ``update(self)`` in the player class. Copy the property you just wrote into this method.
 3. Call the player update method in the main game loop, just underneath ``player.draw()``
 
-### Relevant code
+### Hint
 ```python
 # sprite.get_rect() creates a rectangle the size of the image
 # .move() moves whatever it's attached to to an x and y coordinate
