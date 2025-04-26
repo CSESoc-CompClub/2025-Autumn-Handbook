@@ -6,19 +6,40 @@ Now that each Food knows how to draw itself, it's time to actually **draw all th
 
 
 ## Step 1: Loop Over `active_foods`
+Draw each active food item onto the screen.
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Create a loop inside your <code>while running:</code> loop to iterate over the <code>active_foods</code> list.</li>
+        <li>Call the food’s <code>draw()</code> method.</li>
+    </ul>
+</div>
 
-- Create a `for` loop inside your `while running:` loop which loop over the `active_foods` list.
-- In each loop call the `draw()` method on the food to draw it on screen.
 ---
-
 ## Step 2: Drawing and Interaction
-- Inside the `for` loop:
-    - use player's method to check for interaction with the food.
-    - call the food’s `.draw()` method.
+Check whether the player has interacted with the food. 
+<br>
+<div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>💡 Hint</b></p>
+    <ul>  
+        <li>Inside the <code>for</code> loop:</li>
+        <ul>
+            <li>Use the player's method to check for interaction with the food.</li>
+        </ul>
+    </ul>
+</div>
+
 ---
 
 # Checklist
-- A `for` loop inside the main game loop
-- You can interact with the food
-- Draw the food onto the screen
-- All your food are visible
+<br>
+<div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
+    <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
+    <ul>  
+        <li>A <code>for</code> loop inside the main game loop.</li>
+        <li>You can interact with the food.</li>
+        <li>All food is drawn onto the screen.</li>
+        <li>All your food is visible.</li>
+    </ul>
+</div>
