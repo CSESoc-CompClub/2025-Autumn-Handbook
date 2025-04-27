@@ -31,3 +31,8 @@
     - [Implement a Score](6_finishing_game/6_1_player_score.md)
     - [Implement a Win Condition](6_finishing_game/6_2_game_win.md)
     - [Display the Score](6_finishing_game/6_3_display_score.md)
+
+- [EXTRA FEATURES](7_extra_features/finish.md)
+    - [Implement a Score](7_extra_features/7_1_random_numbers.md)
+    - [Implement a Win Condition](7_extra_features/7_2_game_win.md)
+    - [Display the Score](7_extra_features/7_3_display_score.md)

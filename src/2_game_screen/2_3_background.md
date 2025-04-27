@@ -4,6 +4,15 @@
 3. Make sure the background **fits** the window Use `pygame.transform.scale(...)`
 4. **draw the background** onto the screen use `screen.blit(...)`
 
+<div style="font-size: 20px; background-color:rgb(249, 123, 46); color: black; padding: 15px; border-radius:10px;">
+<p style="text-align: center;"><b>💡 Note </b><p>
+<pre>
+<code>
+ADD YOUR BACKGROUND IMAGE SHOULD HAPPEN BEFORE YOUR GAME LOOP
+</code>
+</pre>
+</div>
+
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b><p>
