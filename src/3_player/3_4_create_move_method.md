@@ -9,16 +9,16 @@
     </ul>
 </div>
 
-2. Use `pygame.key.get_pressed()` to check which keys are currently being held down and save the result into a variable
+2. Use `pygame.key.get_pressed()` to check which keys are currently being held down and save the result into a variable. This function will return a **dictionary** which can be accessed with the variables in the table below.
 
 3. Check if the player is pressing:
 
-| Key | Action |
-|:----|:-------|
-| `W` key | Move **up** |
-| `A` key | Move **left** |
-| `S` key | Move **down** |
-| `D` key | Move **right** |
+| Key | Action | Pygame dictionary key |
+|:----|:-------|:--------------|
+| `W` key | Move **up** | pygame.K_w |
+| `A` key | Move **left** | pygame.K_a |
+| `S` key | Move **down** | pygame.K_s |
+| `D` key | Move **right** | pygame.K_d |
 
 <br>
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
@@ -28,12 +28,11 @@
         <li>If the <code>S</code> key is pressed, <strong>increase</strong> the y position.</li>
         <li>If the <code>A</code> key is pressed, <strong>decrease</strong> the x position.</li>
         <li>If the <code>D</code> key is pressed, <strong>increase</strong> the x position.</li>
+        <li>You can access a dictionary like so: <code>dictionary[dictionary_key]</code></li>
     </ul>
 </div>
 
-4. change the player's image depending on the direction they are moving
-
-<br>
+4. Change the player's image depending on the direction they are moving
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>💡 Hint</b></p>
     <ul>  
@@ -44,7 +43,6 @@
     </ul>
 </div>
 
-# Checkpoints
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b></p>

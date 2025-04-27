@@ -18,8 +18,6 @@ car_instance = Car("Red", 60)
 </div>
 
 2.  After you create the player instance, print out the player’s important properties to check they were created correctly.
-
-<br>
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>💡 Hint</b></p>
     <ul>  
@@ -31,8 +29,6 @@ car_instance = Car("Red", 60)
     </ul>
 </div>
 
-
-# Checkpoints
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
