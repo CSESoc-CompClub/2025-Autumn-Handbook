@@ -19,7 +19,7 @@ ADD YOUR BACKGROUND IMAGE SHOULD HAPPEN BEFORE YOUR GAME LOOP
     <ul>  
         <li>A <code>background_image</code> variable (path to the image)</li>
         <li>A <code>background</code> variable (the scaled loaded image)</li>
-        <li>A <code>screen.blit(variable, coordinate)</code> line inside your <code>while running:</code> loop</li>
+        <li>A <code>screen.blit(variable, coordinate)</code> line outside your <code>while running:</code> loop</li>
         <li>A background showing up instead of a black screen!</li>
     </ul>
 </div>
