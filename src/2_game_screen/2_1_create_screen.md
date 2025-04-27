@@ -13,7 +13,7 @@ Before we make our game we need to set up the screen to display it!
 
 2. Create a window of that size and assign it to screen like so:
 ```python
-pygame.display.set_mode(WIDTH, HEIGHT)
+pygame.display.set_mode((WIDTH, HEIGHT))
 ```
 
 <br>
