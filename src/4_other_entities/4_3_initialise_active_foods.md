@@ -27,8 +27,6 @@
         <li><code>value[2]</code> -> y position</li>
     </ul>
 </div>
-
----
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b></p>

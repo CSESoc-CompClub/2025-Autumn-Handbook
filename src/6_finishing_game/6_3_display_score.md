@@ -5,18 +5,18 @@
 
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
 <p style="text-align: center;"><b>💡 Hint</b><p>
-<pre>
-<code># Setting fonts in pygame
-    colour = (256, 256, 256) # (R,G,B)
-
-    # Creating text - concatenate "Score: " and the score variable
-    # https://www.pygame.org/docs/ref/font.html#pygame.font.Font.render
-    font.render("Score: " + score, True, colour)
-
-    # Drawing on the screen
-    screen.blit(image, (x_position, y_position))
-</code>
-</pre>
+<ul>
+    <li>Setting fonts and colours in pygame:</li>
+    <pre><code>
+colour = (256, 256, 256) # (R,G,B)
+font = pygame.font.SysFont('Palatino', 50)
+    </code></pre>
+    <li>Rendering text. We concatenate "Score: " and the score variable to make it nice!</li>
+    <li><a href="https://www.pygame.org/docs/ref/font.html#pygame.font.Font.render">Link to documentation for font.render</a></li>
+    <pre><code>
+score_render = font.render("Score: " + score, True, colour)
+    </code></pre>
+</ul>
 </div>
 
 

@@ -2,11 +2,7 @@
 
 Now that each Food knows how to draw itself, it's time to actually **draw all the food** onto your game window during the game!
 
-- You will **loop through all active foods** inside your `while running:` game loop.
-
-
-## Step 1: Loop Over `active_foods`
-Draw each active food item onto the screen.
+1. Draw each active food item onto the screen by looping through all active foods inside your `while running:` game loop.
 <br>
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>💡 Hint</b></p>
@@ -16,9 +12,7 @@ Draw each active food item onto the screen.
     </ul>
 </div>
 
----
-## Step 2: Drawing and Interaction
-Check whether the player has interacted with the food. 
+2. Check whether the player has interacted with the food. 
 <br>
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>💡 Hint</b></p>
@@ -29,10 +23,6 @@ Check whether the player has interacted with the food.
         </ul>
     </ul>
 </div>
-
----
-
-# Checklist
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>🚩 Checkpoint</b></p>
