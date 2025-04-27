@@ -1,8 +1,6 @@
 # Task 3.4: Create the move method
 
 1. Inside your `Player` class, define a new method called `move()`.
-
-<br>
 <div style="font-size: 20px; background-color: #ffebdf; color: black; padding: 15px; border-radius:10px;">
     <p style="text-align: center;"><b>💡 Hint</b></p>
     <ul>  

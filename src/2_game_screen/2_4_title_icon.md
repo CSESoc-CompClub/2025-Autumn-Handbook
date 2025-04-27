@@ -1,9 +1,8 @@
 # Task 2.4: Add a Game Title and App Icon
 
-1. Change the text that appears at the very top of your game window use a Pygame function `pygame.display.set_caption()`.
-2. **load an image** using `pygame.image.load(...)`
-3. use Pygame function `pygame.display.set_icon()` to set the image.
-4. The path to your icon should be something like this: "images/game_icon.png"
+1. Change the text that appears at the very top of your game window use a Pygame function `pygame.display.set_caption("My game")`.
+2. Load an image using `icon = pygame.image.load("images/game_icon.png")`
+3. Use the Pygame function `pygame.display.set_icon(icon)` to set the image.
 
 <br>
 <div style="font-size: 20px; background-color: #d9d0f3; color: black; padding: 15px; border-radius:10px;">

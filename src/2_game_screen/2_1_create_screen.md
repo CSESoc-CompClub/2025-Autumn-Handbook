@@ -17,8 +17,8 @@ pygame.display.set_mode((WIDTH, HEIGHT))
 ```
 
 <br>
-<div style="font-size: 20px; background-color: #96a1de; color: black; padding: 15px; border-radius:10px;">
-    <p style="text-align: center;"><b>📝 Note</b><p>
+<div style="font-size: 20px; background-color: #96a1de; color: black; padding: 15px; border-radius:10px; text-align: center;">
+    <p><b>📝 Note</b><p>
     <p>  
         Running your game will cause your program to crash. You must <b>complete Task 1.2</b> before you can see a screen when you run your pygame.
     </p>
