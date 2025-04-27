@@ -12,6 +12,7 @@ If a class is a blueprint, then creating an instance is using that blueprint to 
 car_instance = Car("Red", 60)
         </code></pre>
         <li>This creates an instance of a car with the colour "Red" and a speed of 60. </li>
+        <li>Note: this assumes you have made a class called Car with the properties colour and speed. You can look at 3.1 to see an example of this.</li>
         <li>Your Player class has the properties position_x, position_y, size, image, sprite.</li>
         <li>You should add values inside the bracket, e.g. Player(...) that lines up with those properties.</li>
     </ul>
